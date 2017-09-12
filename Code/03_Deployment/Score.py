@@ -6,7 +6,7 @@ import pickle
 
 def init():   
     # read in the model file
-    dirpath = '.\\Sample_Data'
+    dirpath = 'C:\\TempAMLWorkbench\\TDSPUCIAdultIncome'
     ## Location of Model files 
     RandomForest_model_file = dirpath + '\\CVRandomForestModel.pkl'
     from sklearn.externals import joblib
