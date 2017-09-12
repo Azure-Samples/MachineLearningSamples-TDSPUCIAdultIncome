@@ -1,5 +1,5 @@
 
-# Contributing /wei testing
+# Contributing
 
 Testing edits
 
