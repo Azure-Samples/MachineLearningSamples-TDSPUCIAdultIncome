@@ -5,6 +5,7 @@ For source code files associated with data preparation. Data preparation include
 - Data ingestion
 - Data cleanup
 - Data reduction
-- Data exploration and visualization
+- Data exploration 
+- Data visualization
 
-For further information on data feature and defnintion, you can read this document in TDSP public GitHub repo [(link)](https://github.com/Azure/Azure-TDSP-ProjectTemplate/blob/master/Docs/DataReport/Data%20Defintion.md). And, for what information may be present in a data summary report, you can read this document [(link)](https://github.com/Azure/Azure-TDSP-ProjectTemplate/blob/master/Docs/DataReport/DataSummaryReport.md).
+For further information on data feature and defnintion, you can read this document in TDSP public GitHub repo [(link)](https://github.com/Azure/Azure-TDSP-ProjectTemplate/blob/master/Docs/Data_Report/Data%20Defintion.md). And, for what information may be present in a data summary report, you can read this document [(link)](https://github.com/Azure/Azure-TDSP-ProjectTemplate/blob/master/Docs/Data_Report/DataSummaryReport.md).

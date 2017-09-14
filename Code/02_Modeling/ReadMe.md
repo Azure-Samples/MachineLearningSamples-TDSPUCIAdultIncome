@@ -1,10 +1,14 @@
-Code/02_Model
+# Code/02_Modeling
 
-For each of the sub-tasks under modeling, we have created a sub-folder. In FeatureEngineering and FeatureEngineering sub-folders, have a Main.py and another python file which contains the functions used in Main.py. In the ModelCreation folder, we have one modeling code file, viz. Main_ModelCreation.py. 
+We provide a description of each of the files and their function. 
 
-For source code files associated with the machine learning model, including folders for:
-### Code\Model\01_FeatureEngineering
-### Code\Model\02_ModelCreation
-### Code\Model\03_FeatureEngineering
+## Feature engineering
+### Main_FeatureEngineering.py
+### FeatureEngineering.py
 
-For an example of what a modeling report could include, see this in TDSP public GitHub repo [(link)](https://github.com/Azure/Azure-TDSP-ProjectTemplate/blob/master/Docs/Model/FinalReport.md).
+## Model creation
+### Main_ModelCreation.py
+
+## Model evaluation
+### Main_ScoringAndEvaluation.py
+### ScoringAndEvaluation.py

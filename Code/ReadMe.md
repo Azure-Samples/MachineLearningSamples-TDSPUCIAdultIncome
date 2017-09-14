@@ -1,27 +1,22 @@
 # Code
 
-This directory contains all the source code for the project. Some structure (sub-directories) is provided regarding where to store your code files. 
+This directory contains all the source code for the project. There are three sub-directories, adhering to the stages of the TDSP lifecycle.
 
-It is recommended to maintain the three main folders as "01_DataPrep", "02_Modeling", and "03_Deployment" and follow the steps of the TDSP data science process as outlined [(link)](https://github.com/Azure/Microsoft-TDSP). However, if this does not work for your project such as a big data project without a model or the code is contained in a single process, you are free to restructure folders within "Code" to suit your needs, as long as you number the folders numerically according to the stages of the process to which you approach the problem, e.g. "01_DataPrep" and "02_Deployment" if there contains no model.
+## Code/01_Data_Acquisition_and_Understanding
+This folder contains code for data preparation and exploratory analyses. It also contains any necessary settings files needed to run the data exploration code. 
 
-Please delete the comments above and use this ReadMe file to describe the structure of your code.
-### Code/01_DataPrep
-[comment]: # (Include brief description of what was done here.)
+Data exploration is performed using the Python 3 [IDEAR (Interactive Data Exploration and Reporting) utility](https://github.com/Azure/Azure-TDSP-Utilities/tree/master/DataScienceUtilities/DataReport-Utils/Python) published as a part of [TDSP suite of data science tools](https://github.com/Azure/Azure-TDSP-Utilities). This utility helps to generate standardized data exploration reports for data containing numerical and categorical features and target. Details of how the Python 3 IDEAR utility was used is provided below. 
 
-### Code/02_Modeling
-[comment]: # (Include brief description of what was done here.)
+The location of the final data exploration report is [here](https://github.com/Azure/MachineLearningSamples-TDSPUCIAdultIncome/tree/master/Docs/DeliveralbeDocs).
 
-### Code/03_Deployment
-[comment]: # (Include brief description of what was done here.)
 
-[comment]: # (Coding styles of Python and R)
-[comment]: # (It is good practice to follow coding conventions to facilitate better collaboration and standardization.)
+Further details on the code used for data preparation and exploratory analysis is provided in [Code/01_Data_Acquisition_and_Understanding](https://github.com/Azure/MachineLearningSamples-TDSPUCIAdultIncome/tree/master/Code/01_Data_Acquisition_and_Understanding).  
 
-[comment]: # (R Style guides:)
-[comment]: # (http://adv-r.had.co.nz/Style.html Hadley Wickham's advanced R programming guide is a great resource that is accessible and a good start.)
-[comment]: # (https://google.github.io/styleguide/Rguide.xml Google's R style guide is more detailed and what I would suggest we adopt.)
-[comment]: # (http://handsondatascience.com/StyleO.pdf a 24 page detailed document that covers almost everything we could ever run into.)
-[comment]: # (Additionally, there is the _lintr_ package, which runs a syntax style checker on your code. This is what later versions of RStudio use to issue warnings while editing R code.)
 
-[comment]: # (Python style guides:)
-[comment]: # (https://www.python.org/dev/peps/pep-0008/)
+## Code/02_Modeling
+This folder contains code related to modeling, including feature engineering, model creation (using cross-validation and hyper-parameter sweeping), and model evaluation. For illustration, two models were created using Elastic Net and Random Forest. Evaluation on test data indicated AUC of both models were comparable, and were > 0.85. 
+
+Details about the code used in modeling is provided in [Code/02_Modeling](https://github.com/Azure/MachineLearningSamples-TDSPUCIAdultIncome/tree/master/Code/Code/02_Modeling).
+
+## Code/03_Deployment
+This folder contains code related to deployment of the Random Forest model in Azure Container Services. Details about the code used in deployment is provided in [Code/03_Deployment](https://github.com/Azure/MachineLearningSamples-TDSPUCIAdultIncome/tree/master/Code/Code/03_Deployment).
