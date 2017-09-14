@@ -16,7 +16,7 @@ Further details on the code used for data preparation and exploratory analysis i
 ## Code/02_Modeling
 This folder contains code related to modeling, including feature engineering, model creation (using cross-validation and hyper-parameter sweeping), and model evaluation. For illustration, two models were created using Elastic Net and Random Forest. Evaluation on test data indicated AUC of both models were comparable, and were > 0.85. 
 
-Details about the code used in modeling is provided in [Code/02_Modeling](https://github.com/Azure/MachineLearningSamples-TDSPUCIAdultIncome/tree/master/Code/Code/02_Modeling).
+Details about the code used in modeling is provided in [Code/02_Modeling](https://github.com/Azure/MachineLearningSamples-TDSPUCIAdultIncome/tree/master/Code/02_Modeling).
 
 ## Code/03_Deployment
-This folder contains code related to deployment of the Random Forest model in Azure Container Services. Details about the code used in deployment is provided in [Code/03_Deployment](https://github.com/Azure/MachineLearningSamples-TDSPUCIAdultIncome/tree/master/Code/Code/03_Deployment).
+This folder contains code related to deployment of the Random Forest model in Azure Container Services. Details about the code used in deployment is provided in [Code/03_Deployment](https://github.com/Azure/MachineLearningSamples-TDSPUCIAdultIncome/tree/master/Code/03_Deployment).
