@@ -4,18 +4,18 @@
 [comment]: # (Some ideas of what to include in the executive summary are detailed below. Please edit and capture the relevant information within each section)
 [comment]: # (To capture more detail in the scoping phase, the optional template Scoping.md may be utilized. If more detail around the data, use case, architecture, or other aspects needs to be captured, additional markdown files can be referenced and placed into the Docs folder)
 
-This file contains information about the project being executed (in this case, the UCI Adult Income sample using Azuer Machine Learning Workbench). Typically It is organized according to the Team Data Science (TDSP) Process [Lifecycle stages](https://github.com/Azure/Microsoft-TDSP/blob/master/Docs/lifecycle-detail.md), with an additional section for architecture and environment. 
+This file contains information about the project being executed (in this case, the UCI Adult Income sample using Azuer Machine Learning Workbench). It is organized according to the Team Data Science (TDSP) Process [Lifecycle stages](https://github.com/Azure/Microsoft-TDSP/blob/master/Docs/lifecycle-detail.md), with an additional section for architecture and environment. 
 
 
 ## 1. Business Understanding
-* NOTE: This is a sample, so scope, plan etc., does not necessarily correspond to an actual data science project addressing a specific business question. In an actual project, the problem definiion, scope, plan, personnel sections are likely to be much more detailed, based on discussions with the client (or business owner), the structure of the data science team etc.
+* NOTE: This is a sample for a tutorial, so scope, plan etc., does not necessarily correspond to an actual data science project addressing a specific business question. In an actual project, the problem definiion, scope, plan, personnel sections are likely to be much more detailed, based on discussions with the client (or business owner), the structure of the data science team etc.
 
 ### Problem Definition
 The purpuse of this sample is to show how to instantiate and execute a projet using the TDSP structure and templates.
 
 The dataset for this project is from the UCI ML Repository [[link]](https://archive.ics.uci.edu/ml/datasets/adult). It is taken from the 1994 US Census database and contains census and income information for about 50,000 individuals. Based on census features, the machine learning task is to predict if the income of an individual is above $50,000 or not (binary classification).
 
-Further information about the dataset is downlaoded and saved [here](\Docs\CustomerDocs\UCI_Adult_Income_Data_Information.txt). 
+Further information about the dataset is downlaoded and saved [here](.\Docs\CustomerDocs\UCI_Adult_Income_Data_Information.txt). 
 
 ### Scope
  * Ths scope of this sample is to create a binary classification machine learning model which address the above rediction problem. 
@@ -90,9 +90,9 @@ AUC of both Elastic net and Random forest models were > 0.85. Therefore, per cri
 
 ## Architecture & Environments
 #### Development
-We use Azure (Windows 2012 Server) Data Science Virtual Machine [(DSVM)](https://docs.microsoft.com/en-us/azure/machine-learning/machine-learning-data-science-virtual-machine-overview) for development. Azure Machine Learning Workbench is installed on the DSVM. 
+We used an Azure Data Science Virtual Machine (DSVM) Windows Server 2016, (VM Size: [DS3_V2](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes), with 4 virtual CPUs and 14-Gb RAM). Azure Machine Learning Workbench is installed on the DSVM. 
 
-We used the TDSP template in Azure Machine Learning Workbench to create a new project, and all code and decuments were developed in this project. Instructions on how to create a new project in TDSP format is provided [here](https://github.com/amlsamples/tdsp/blob/master/Docs/Using-TDSP-in-Vienna.md).
+We used the TDSP template in Azure Machine Learning Workbench to create a new project, and all code and decuments were developed in this project. Instructions on how to create a new project in TDSP format is provided [here](https://github.com/amlsamples/tdsp/blob/master/Docs/how-to-use-tdsp-in-azure-ml.md).
 
 Code is executed in the AMLW Python 3.5 environment using the Azure Machine Learning Workbench CLI. See Azure Machine Learning Workbench product documentation for information on installation and execution. Details about code and its execution is provided in the respective folders and subfolders under \Code.
 
@@ -104,7 +104,7 @@ For deployment, we copied the following files in the project root directory:
 2. The pickled Random Forest model file (CVRandomForesstModel.pkl) 
 3. The scoring script, score.py, from the Code\Deployment folder
 
-We then deployed a web-service on a cluster (see instructions on step 10 [here](https://github.com/Azure/ViennaDocs/blob/master/Documentation/tutorial-classifying-iris.md)). In cluster mode,  service is run in the Azure Container Service (ACS). The operationalization environment provisions Docker and Kubernetes in the cluster to manage the web service deployment.
+We then deployed a web-service on a cluster (see instructions on step 11 [here](https://github.com/Azure/ViennaDocs/blob/master/Documentation/tutorial-classifying-iris.md)). In cluster mode,  service is run in the Azure Container Service (ACS). The operationalization environment provisions Docker and Kubernetes in the cluster to manage the web service deployment.
 
 
 [comment]: # (If there is a substantial change in the customer's business workflow, make a before/after diagram showing the data flow.)
