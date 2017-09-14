@@ -7,7 +7,7 @@ from FeatureEngineering import filter_and_transform_TrainData_Features, filter_a
 ###########################################################################################
 ## FILTER AND TRANSFORM FEATURES
 ###########################################################################################
-dirpath = 'C:\\TempAMLWorkbench\\TDSPUCIAdultIncome'
+dirpath = '.\\outputs'
 
 train_input_file = dirpath + "\\uci_income_train.csv"
 train_engineered_file = dirpath + "\\train_data_engineered.pkl"

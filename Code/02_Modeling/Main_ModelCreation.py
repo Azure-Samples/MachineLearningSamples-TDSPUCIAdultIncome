@@ -17,7 +17,7 @@ from matplotlib.backends.backend_pdf import PdfPages
 #####################################################################################################
 # MAKE OUTPUR DIRECTORY OUTSIDE OF THE GIT REPO ON LOCAL DRIVE
 #####################################################################################################
-dirpath = 'C:\\TempAMLWorkbench\\TDSPUCIAdultIncome'
+dirpath = '.\\outputs'
 pathlib.Path(dirpath).mkdir(parents=True, exist_ok=True) 
 
 #####################################################################################################

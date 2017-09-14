@@ -7,7 +7,7 @@ from DataPreparation import downloaddata
 #############################################
 if __name__ == '__main__':
 
-    dest_folder = 'C:\\TempAMLWorkbench\\TDSPUCIAdultIncome'
+    dest_folder = '.\\outputs'
     trainfilename = 'uci_income_train.csv'
     testfilename = 'uci_income_test.csv'
 

@@ -6,7 +6,7 @@ import pickle
 
 def init():   
     # read in the model file
-    dirpath = 'C:\\TempAMLWorkbench\\TDSPUCIAdultIncome'
+    dirpath = '.\\outputs'
     ## Location of Model files 
     RandomForest_model_file = dirpath + '\\CVRandomForestModel.pkl'
     from sklearn.externals import joblib
@@ -29,7 +29,7 @@ if __name__ == '__main__':
     
     init()
 
-    dirpath = 'C:\\TempAMLWorkbench\\TDSPUCIAdultIncome'
+    dirpath = '.\\outputs'
     # Location of transformed test data for scoring
     TransformedTestDatPklFile = dirpath + "\\test_data_engineered.pkl"
 

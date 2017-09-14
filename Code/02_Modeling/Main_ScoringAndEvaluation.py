@@ -9,7 +9,7 @@ from ScoringAndEvaluation import Get_Class_Probabilities, Evaluate_Predictions
 #####################################################################################################
 # SET FILE LOCATION, LOCATION TO TEST DATA AND MODEL FILE
 #####################################################################################################
-dirpath = 'C:\\TempAMLWorkbench\\TDSPUCIAdultIncome'
+dirpath = '.\\outputs'
 
 
 # Transformed test data for scoring
