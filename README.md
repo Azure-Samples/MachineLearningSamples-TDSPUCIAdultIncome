@@ -46,7 +46,7 @@ The primary purpose of this sample is to show how to instantiate and execute a d
 1. An Azure [subscription](https://azure.microsoft.com/en-us/free/)
 2. This tutorial was tested on an Azure Data Science Virtual Machine (DSVM) Windows Server 2016, (VM Size: [DS3_V2](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes), with 4 virtual CPUs and 14-Gb RAM). 
 3. Please review documentation on Azure ML Workbench and its related services.
-4. Make sure that you have properly installed Azure ML Workbench by following the [installation guide](https://github.com/Azure/ViennaDocs/blob/master/Documentation/Installation.md).
+4. Install [Azure Machine Learning Workbench](./overview-what-is-azure-ml) following the [quick start installation guide](./quick-start-installation).
 
 ### Informational: Data
 The dataset for this sample is from the UCI ML Repository [[link]](https://archive.ics.uci.edu/ml/datasets/adult). It is taken from the 1994 US Census database and contains census and income information for about 50,000 individuals. This is structured dataset having numerical and categorical features, and a categorical target for binary classification. 
@@ -99,7 +99,7 @@ We  deployed a web-service on a cluster in the [Azure Container Service (ACS)](h
 Details about each of the above sections are provided in the project report [ProjectReport](https://github.com/Azure/MachineLearningSamples-TDSPUCIAdultIncome/ProjectReport.md). The project report also contains further details about the use case, model performance metrics, deployment, and infrastructure.
 
 
-## Conclusion & Next Steps
+## Conclusion
 
 In this sample, we showed now to use TDSP structure and templates in Azure Machine Learning Workbench. We hope you use this feature of Azure Machine Learning Workbench to facilitate with project structure standardization and collaboration within your data science teams.
 
