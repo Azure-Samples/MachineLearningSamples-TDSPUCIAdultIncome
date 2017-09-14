@@ -3,9 +3,12 @@
 ########################################################################################################
 def filter_and_transform_TrainData_Features(TrainFile):
     #####################################################################################################
-    # IMPORT LIBRARIES;
+    # IMPORT LIBRARIES
     #####################################################################################################
-    import pandas, numpy as np, os, io, sys, pickle, pathlib, requests, pandas as pd
+    import numpy as np
+    import pandas
+    import pandas as pd
+    import requests
     from sklearn import preprocessing
 
     ###########################################################################################
@@ -70,7 +73,10 @@ def filter_and_transform_TestData_Features(TestFile, TrainFile):
     #####################################################################################################
     # IMPORT LIBRARIES;
     #####################################################################################################
-    import pandas, numpy as np, os, io, sys, pickle, pathlib, requests, pandas as pd
+    import numpy as np
+    import pandas
+    import pandas as pd
+    import requests
     from sklearn import preprocessing
 
     ###########################################################################################

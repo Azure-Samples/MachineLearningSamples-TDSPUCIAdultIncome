@@ -1,11 +1,11 @@
 #####################################################################################################
-# IMPORT LIBRARIES;
+# IMPORT LIBRARIES
 #####################################################################################################
 import pickle
 from FeatureEngineering import filter_and_transform_TrainData_Features, filter_and_transform_TestData_Features
 
 ###########################################################################################
-## FILTER AND TRANSFORM FEATURES: TRAINING DATA SET
+## FILTER AND TRANSFORM FEATURES
 ###########################################################################################
 dirpath = 'C:\\TempAMLWorkbench\\TDSPUCIAdultIncome'
 
@@ -14,7 +14,6 @@ train_engineered_file = dirpath + "\\train_data_engineered.pkl"
 
 test_input_file = dirpath + "\\uci_income_test.csv"
 test_engineered_file = dirpath + "\\test_data_engineered.pkl"
-
 
 if __name__ == '__main__':
     # Transform train file

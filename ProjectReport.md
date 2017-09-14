@@ -52,7 +52,7 @@ FEATURES: Age, work class, education level, education level, race, sex, hours of
 ### Data Exploration with IDEAR Utility
 Data exploration is performed using the Python 3 [IDEAR (Interactive Data Exploration and Reporting) utility](https://github.com/Azure/Azure-TDSP-Utilities/tree/master/DataScienceUtilities/DataReport-Utils/Python) published as a part of [TDSP suite of data science tools](https://github.com/Azure/Azure-TDSP-Utilities). This utility helps to generate standardized data exporation reports for data containing numerical and categorical features and target. Details of how the Python 3 IDEAR utility was used is provided bleow. 
 
-The location of the final data exploration report is here: .
+The location of the final data exploration report is here: (.\Docs\DeliveralbeDocs\IDEAR.html).
 
 
 ## 3. Modeling
@@ -79,7 +79,7 @@ Numerical features (other than the ones above) were standardized using Scikit-le
 Training and test data sets were pickled and saved as .pkl files for input into modeling (training data), and model evaluation or deploymenbt (test data).
 
 ### Modeling
-We created two models with 3-fold cross-validation: Elastic net and Random forest. We used [59 point sampling](http://www.jmlr.org/papers/volume13/bergstra12a/bergstra12a.pdf) for random grid search as a strategy for cross-validation. 
+We created two models with 3-fold cross-validation: Elastic net and Random forest. We used [59-point sampling](http://www.jmlr.org/papers/volume13/bergstra12a/bergstra12a.pdf) for random grid search as a strategy for cross-validation. 
 
 ### Model evaluation
 Accuracy of the models were measured using AUC on the test data set. AUC of both Elastic net and Random forest models were > 0.85. We save both models in pickled .pkl files, and output the ROC plots for both models. In addition, feature importance for the Random forest model are output in a .csv file and plotted in a pdf (top predictive features only).
@@ -98,9 +98,14 @@ Code is executed in the AMLW Python 3.5 environment using the Azure Machine Lear
 
 Outputs generated from data preparation and modeling stages are stored in: C:\\TempAMLWorkbench\\TDSPUCIAdultIncome folder. 
 
-#### Testing
-
 #### Deployment
+For deployment, we copied the following files in the project root directory:
+1. Json file for input data format
+2. The pickled Random Forest model file (CVRandomForesstModel.pkl) 
+3. The scoring script, score.py, from the Code\Deployment folder
+
+We then deployed a web-service on a cluster (see instructions on step 10 [here](https://github.com/Azure/ViennaDocs/blob/master/Documentation/tutorial-classifying-iris.md)). In cluster mode,  service is run in the Azure Container Service (ACS). The operationalization environment provisions Docker and Kubernetes in the cluster to manage the web service deployment.
+
 
 [comment]: # (If there is a substantial change in the customer's business workflow, make a before/after diagram showing the data flow.)
 

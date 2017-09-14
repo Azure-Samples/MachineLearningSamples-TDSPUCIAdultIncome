@@ -2,7 +2,9 @@
 # SCORE DATA WITH A SAVED MODEL FILE
 #################################################################################
 def Get_Class_Probabilities (TransformedTestDatPklFile, modelPkllFile):
-    import pandas, numpy as np, os, sys, pathlib, pickle, site, math, statistics
+    import numpy as np
+    import pandas
+    import pickle
     from sklearn import ensemble, linear_model, model_selection, preprocessing, metrics
     from scipy import stats;
     from sklearn.ensemble import RandomForestClassifier
@@ -13,7 +15,7 @@ def Get_Class_Probabilities (TransformedTestDatPklFile, modelPkllFile):
     testDataFrame = pickle.load(inFile)
     inFile.close()
 
-    y_test = testDataFrame["income"].values
+    testDataFrame["income"].values
     X_test = testDataFrame.drop("income", axis=1)
 
     # Open Model File
@@ -32,7 +34,8 @@ def Get_Class_Probabilities (TransformedTestDatPklFile, modelPkllFile):
 # EVALUATE PERFORMANCE OF A MODEL ON A TEST DATA AND SAVE A ROC PLOT WITH AUC
 #################################################################################
 def Evaluate_Predictions (y_pred, y_actual, ROCFile):
-    import pandas, numpy as np, os, sys, pathlib, pickle, site, math, statistics
+    import numpy as np
+    import pandas
     import matplotlib.pyplot as plt; 
     from sklearn import ensemble, linear_model, model_selection, preprocessing, metrics
 
