@@ -22,19 +22,22 @@ ms.author: bradsev
 
 ## Introduction
 
-Standardization of the structure and documentation of data science projects, that is anchored to an established [data science lifecycle](https://github.com/Azure/Microsoft-TDSP/blob/master/Docs/lifecycle-detail.md), is key to facilitating effective collaboration on data science teams. Creating Azure Machine Learning Workbench projects with the [Team Data Science Process (TDSP)](https://github.com/Azure/Microsoft-TDSP) template provides a framework for such standardization.
+Standardization of the structure and documentation of data science projects, that is anchored to an established [data science lifecycle](https://github.com/Azure/Microsoft-TDSP/blob/master/Docs/lifecycle-detail.md), is key to facilitating effective collaboration in data science teams. Creating Azure Machine Learning Workbench projects with the [Team Data Science Process (TDSP)](https://github.com/Azure/Microsoft-TDSP) template provides a framework for such standardization.
 
-We had previously released a [GitHub repository for the TDSP project structure and templates](https://github.com/Azure/Azure-TDSP-ProjectTemplate). But it was not possible, until now to instantiate the TDSP structure and templates within a data science tool. We have now enabled creation of Azure Machine Learning Workbench projects that are instantiated with [TDSP structure and documentation templates for Azure ML Workbench](https://github.com/amlsamples/tdsp). Instructions on how to use TDSP structure and templates in Azure Machine Learning Workbench is provided [here](https://github.com/amlsamples/tdsp/blob/master/Docs/how-to-use-tdsp-in-azure-ml.md). Here we provide an example of how an actual machine learning project can be created using TDSP structure, populated with project-specific code and documents, and executed within the Azure Machine Learning Workbench.
+We had previously released a [GitHub repository for the TDSP project structure and templates](https://github.com/Azure/Azure-TDSP-ProjectTemplate). But it was not possible, until now to instantiate the TDSP structure and templates within a data science tool. We have now enabled creation of Azure Machine Learning Workbench projects that are instantiated with [TDSP structure and documentation templates for Azure Machine Learning Workbench](https://github.com/amlsamples/tdsp). Instructions on how to use TDSP structure and templates in Azure Machine Learning Workbench is provided [here](https://github.com/amlsamples/tdsp/blob/master/Docs/how-to-use-tdsp-in-azure-ml.md). Here we provide an example of how an actual machine learning project can be created using TDSP structure, populated with project-specific code, artifacts and documents, and executed within the Azure Machine Learning Workbench.
 
 
 ### Purpose & Scope
-The primary purpose of this sample is to show how to instantiate and execute a data science project using the [Team Data Science Process (TDSP)](https://github.com/Azure/Microsoft-TDSP) structure and templates in Azure Machine Learning Workbench.
+### Purpose
+The primary purpose of this sample is to show how to instantiate and execute a machine learning project using the [Team Data Science Process (TDSP)](https://github.com/Azure/Microsoft-TDSP) structure and templates in Azure Machine Learning Workbench. For this purpose, we use the well-known [1994 US Census data from the UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/adult). The modeling task is to predict US annual income classes from US Census information (for example, age, race, education level, country of origin, etc.)
 
- * This sample shows data exploration, training, and deployment of a machine learning model which address the above prediction problem described in the Use Case Overview below. 
- * We execute the project in Azure Machine Learning Workbench. We use the Team Data Science Process template from Azure ML Workbench for this project. 
- * Finally, we operationalize the solution directly from Azure Machine Learning Workbench in Azure Container Services for batch and single-mode scoring.
+### Scope
 
- The project highlights several features of Azure Machine Learning Workbench, such TDSP structure instantiation, execution of code in Jupyter notebooks as well as Python files, and easy operationalization
+ * Data exploration, training, and deployment of a machine learning model which address the prediction problem described in the Use Case Overview below. 
+ * Execution of the project in Azure Machine Learning Workbench using the Team Data Science Process (TDSP) template from Azure Azure Machine Learning Workbench Workbench for this project. 
+ * Operationalize the solution directly from Azure Machine Learning Workbench in Azure Container Services.
+
+ The project highlights several features of Azure Machine Learning Workbench, such TDSP structure instantiation, execution of code in Jupyter notebooks as well as Python files, and easy operationalization in Azure Container Services using Kubernetes.
 
 
 ## [Team Data Science Process (TDSP) Lifecycle](https://github.com/Azure/Microsoft-TDSP/blob/master/Docs/lifecycle-detail.md)
@@ -45,8 +48,8 @@ The primary purpose of this sample is to show how to instantiate and execute a d
 ### Required: Subscription, Hardware, Software
 1. An Azure [subscription](https://azure.microsoft.com/en-us/free/)
 2. This tutorial was tested on an Azure Data Science Virtual Machine (DSVM) Windows Server 2016, (VM Size: [DS3_V2](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes), with 4 virtual CPUs and 14-Gb RAM). 
-3. Please review documentation on Azure ML Workbench and its related services.
-4. Make sure that you have properly installed Azure ML Workbench by the [quick start installation guide](./quick-start-installation.md).
+3. Please review documentation on Azure Machine Learning Workbench and its related services.
+4. Make sure that you have properly installed Azure Machine Learning Workbench by the [quick start installation guide](./quick-start-installation.md).
 
 The dataset for this sample is from the UCI ML Repository [[link]](https://archive.ics.uci.edu/ml/datasets/adult). It is taken from the 1994 US Census database and contains census and income information for about 50,000 individuals. This is structured dataset having numerical and categorical features, and a categorical target for binary classification. 
 
