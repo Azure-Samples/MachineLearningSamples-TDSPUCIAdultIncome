@@ -13,15 +13,11 @@ For further information on data feature and defnintion, you can read this docume
 ## Code file documentation
 
 ### DataPreparation.py:
-    Purpose: To download and prepare data
+    Purpose: download and prepare data
     Language: Python
     How it gets used: Used in Code\01\_Data\_Acquisition\_and_Understanding\Main.py
-    Function 1: Brief description
-    Function 2: Brief description
+    downloaddata: download training and test data from the web to local
 
 ### Main.py:
-    Purpose:
-    Language:
-    How it gets used: 
-    Function 1: Brief description
-    Function 2: Brief description
+    Purpose: call function in DataPreparation.py to download data
+    Language: Python
