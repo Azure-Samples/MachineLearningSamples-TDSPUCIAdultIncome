@@ -38,7 +38,6 @@ The dataset for this sample is from the UCI ML Repository [[link]](https://archi
 * [Overview](overview-what-is-azure-ml.md)
 * [Installation](quick-start-installation.md)
 * [Using TDSP](https://aka.ms/how-to-use-tdsp-in-aml)
-* [Using GPU](how-to-use-gpu.md)
 * [Read and write files](how-to-read-write-files.md)
 * [Deploying an ML model as a web service](model-management-service-deploy.md)
 
@@ -50,13 +49,16 @@ For detailed information about the data, see the [description](https://archive.i
 
 This data was extracted from the Census Bureau database found at: https://www.census.gov/en.html. 
 
-    There are a total of 48,842 instances (prior to any filtering), mix of continuous and discrete (train=32,561, test=16,281)
-    Probability for the label '>50K'  : 23.93% / 24.78% (without unknowns)
-    Probability for the label '<=50K' : 76.07% / 75.22% (without unknowns)
-    TARGET: Income class >50K, <=50K. These are replaced by 1 and 0 respectively in data preparation phase.
-    FEATURES: Age, work class, education level, education level, race, sex, hours of work per week, etc.
 
-## Project Structure and Reporting
+* There are a total of 48,842 instances (prior to any filtering), mix of continuous and discrete (train=32,561, test=16,281)
+* Probability for the label '>50K'  : 23.93% / 24.78% (without unknowns)
+* Probability for the label '<=50K' : 76.07% / 75.22% (without unknowns)  
+
+* **TARGET**: Income class >50K, <=50K. These are replaced by 1 and 0 respectively in data preparation phase.
+* **FEATURES**: Age, work class, education level, education level, race, sex, hours of work per week, etc.
+
+
+## Project Structure And Reporting
 
 ### Structure
 For this project, we use the TDSP folder structure and documentation templates (Figure 1), which follows the [TDSP lifecycle](https://github.com/Azure/Microsoft-TDSP/blob/master/Docs/lifecycle-detail.md). 
