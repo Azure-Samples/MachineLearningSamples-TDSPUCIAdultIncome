@@ -1,23 +1,3 @@
----
-title: Income Classification from US Census Data with a Team Data Science Process Project in Azure Machine Learning Workbench | Microsoft Docs
-description: How to use the Team Data Science Process template to create a project in Azure Machine Learning Workbench that classifies UCI income.
-services: machine-learning
-documentationcenter: ''
-author: bradsev
-manager: cgronlun
-editor: cgronlun
-
-ms.assetid: 
-ms.service: machine-learning
-ms.workload: data-services
-ms.tgt_pltfrm: na
-ms.devlang: na
-ms.topic: article
-ms.date: 09/10/2017
-ms.author: bradsev
-
----
-
 # Income Classification from US Census Data with a Team Data Science Process project in Azure Machine Learning Workbench
 
 ## Introduction
