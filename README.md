@@ -34,7 +34,7 @@ The primary purpose of this sample is to show how to instantiate and execute a m
 ### Scope
 
  * Data exploration, training, and deployment of a machine learning model which address the prediction problem described in the Use Case Overview below. 
- * Execution of the project in Azure Machine Learning Workbench using the Team Data Science Process (TDSP) template from Azure Azure Machine Learning Workbench Workbench for this project. 
+ * Execution of the project in Azure Machine Learning Workbench using the Team Data Science Process (TDSP) template from Azure Azure Machine Learning Workbench Workbench for this project. For project execution and reporting, we're going to use the TDSP lifecycle below.
  * Operationalize the solution directly from Azure Machine Learning Workbench in Azure Container Services.
 
  The project highlights several features of Azure Machine Learning Workbench, such TDSP structure instantiation, execution of code in Jupyter notebooks as well as Python files, and easy operationalization in Azure Container Services using Kubernetes.
@@ -51,8 +51,16 @@ The primary purpose of this sample is to show how to instantiate and execute a m
 3. Please review documentation on Azure Machine Learning Workbench and its related services.
 4. Make sure that you have properly installed Azure Machine Learning Workbench by the [quick start installation guide](./quick-start-installation.md).
 
-The dataset for this sample is from the UCI ML Repository [[link]](https://archive.ics.uci.edu/ml/datasets/adult). It is taken from the 1994 US Census database and contains census and income information for about 50,000 individuals. This is structured dataset having numerical and categorical features, and a categorical target for binary classification. 
+The dataset for this sample is from the UCI ML Repository [[link]](https://archive.ics.uci.edu/ml/datasets/adult). It is taken from the 1994 US Census database and contains census and income information for about 50,000 individuals. This is structured dataset having numerical and categorical features, and a categorical target consisting of two income categories ('>50K' or '<=50K'). 
 
+### Informational: About Azure Machine Learning Workbench
+* [FAQ - How to get started](faq.md)
+* [Overview](overview-what-is-azure-ml.md)
+* [Installation](quick-start-installation.md)
+* [Using TDSP](https://aka.ms/how-to-use-tdsp-in-aml)
+* [Using GPU](how-to-use-gpu.md)
+* [Read and write files](how-to-read-write-files.md)
+* [Deploying an ML model as a web service](model-management-service-deploy.md)
 
 ## Use Case Overview
 The problem is to understand how socio-economic data captured in US Census can help predict annual income of individuals in US. Based on such Census features, the machine learning task is to predict if the income of an individual is above $50,000 or not (binary classification task).
@@ -65,7 +73,7 @@ This data was extracted from the Census Bureau database found at: https://www.ce
     There are a total of 48,842 instances (prior to any filtering), mix of continuous and discrete (train=32,561, test=16,281)
     Probability for the label '>50K'  : 23.93% / 24.78% (without unknowns)
     Probability for the label '<=50K' : 76.07% / 75.22% (without unknowns)
-    TARGET: Income class >50K, <=50K.
+    TARGET: Income class >50K, <=50K. These are replaced by 1 and 0 respectively in data preparation phase.
     FEATURES: Age, work class, education level, education level, race, sex, hours of work per week, etc.
 
 ## Project Structure and Reporting
@@ -73,7 +81,7 @@ This data was extracted from the Census Bureau database found at: https://www.ce
 ### Structure
 For this project, we use the TDSP folder structure and documentation templates (Figure 1), which follows the [TDSP lifecycle](https://github.com/Azure/Microsoft-TDSP/blob/master/Docs/lifecycle-detail.md). 
 
-Project is created based on instructions provided [here](https://github.com/amlsamples/tdsp/blob/master/Docs/how-to-use-tdsp-in-azure-ml.md).
+Project is created based on instructions provided [here](https://aka.ms/how-to-use-tdsp-in-aml).
 
 
 <img src="./Images/instantiation-3.png" width="900" height="500">
