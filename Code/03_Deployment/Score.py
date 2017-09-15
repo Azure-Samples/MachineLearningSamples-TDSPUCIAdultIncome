@@ -6,9 +6,8 @@ import pickle
 
 def init():   
     # read in the model file
-    dirpath = '.\\outputs'
     ## Location of Model files 
-    RandomForest_model_file = dirpath + '\\CVRandomForestModel.pkl'
+    RandomForest_model_file = 'CVRandomForestModel.pkl'
     from sklearn.externals import joblib
     global model
     model = joblib.load(RandomForest_model_file)
