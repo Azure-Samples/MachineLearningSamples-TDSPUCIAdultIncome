@@ -17,7 +17,7 @@ The primary purpose of this sample is to show how to instantiate and execute a m
  * Execution of the project in Azure Machine Learning Workbench using the Team Data Science Process (TDSP) template from Azure Azure Machine Learning Workbench Workbench for this project. For project execution and reporting, we're going to use the TDSP lifecycle below.
  * Operationalize the solution directly from Azure Machine Learning Workbench in Azure Container Services.
 
- The project highlights several features of Azure Machine Learning Workbench, such TDSP structure instantiation, execution of code in Jupyter notebooks as well as Python files, and easy operationalization in Azure Container Services using Kubernetes.
+ The project highlights several features of Azure Machine Learning Workbench, such TDSP structure instantiation, execution of code in Jupyter notebooks as well as Python files, and easy operationalization in Azure Container Services using Docker and Kubernetes.
 
 
 ## [Team Data Science Process (TDSP) Lifecycle](https://github.com/Azure/Microsoft-TDSP/blob/master/Docs/lifecycle-detail.md)
@@ -82,7 +82,7 @@ The location of the final data exploration report is [here](https://github.com/A
 
 * [**Modeling**](https://github.com/Azure/MachineLearningSamples-TDSPUCIAdultIncome/tree/master/Code/02_Modeling)
 
-We created two models with 3-fold cross-validation: Elastic Net and Random forest. We used [59-point sampling](http://www.jmlr.org/papers/volume13/bergstra12a/bergstra12a.pdf)  for random grid search as a strategy for cross-validation. Accuracy of the models were measured using AUC (Area under curve) on the test data set. AUC of both Elastic Net and Random Forest models were > 0.85. We save both models in pickled.pkl files, and output the ROC plots for both models. In addition, for model interpretation, feature importance for the Random Forest model are output in a .csv file and plotted in a pdf (top predictive features only).
+We created two models with 3-fold cross-validation: Elastic Net and Random forest. We used [59-point sampling](http://www.jmlr.org/papers/volume13/bergstra12a/bergstra12a.pdf)  for random grid search as a strategy for cross-validation and model parameter optimization. Accuracy of the models were measured using AUC (Area under curve) on the test data set. AUC of both Elastic Net and Random Forest models were > 0.85. We save both models in pickled.pkl files, and output the ROC plots for both models. In addition, for model interpretation, feature importance for the Random Forest model are output in a .csv file and plotted in a pdf (top predictive features only).
 
 * [**Deployment**](https://github.com/Azure/MachineLearningSamples-TDSPUCIAdultIncome/tree/master/Code/03_Deployment)
 
