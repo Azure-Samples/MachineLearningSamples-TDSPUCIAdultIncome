@@ -1,23 +1,23 @@
-# Income Classification from US Census Data with a Team Data Science Process project in Azure Machine Learning Workbench
+# Income Classification from US Census Data with a Team Data Science Process (TDSP) Project in Azure Machine Learning
 
 ## Introduction
 
-Standardization of the structure and documentation of data science projects, that is anchored to an established [data science lifecycle](https://github.com/Azure/Microsoft-TDSP/blob/master/Docs/lifecycle-detail.md), is key to facilitating effective collaboration in data science teams. Creating Azure Machine Learning Workbench projects with the [Team Data Science Process (TDSP)](https://github.com/Azure/Microsoft-TDSP) template provides a framework for such standardization.
+Standardization of the structure and documentation of data science projects, that is anchored to an established [data science lifecycle](https://github.com/Azure/Microsoft-TDSP/blob/master/Docs/lifecycle-detail.md), is key to facilitating effective collaboration in data science teams. Creating Azure Machine Learning projects with the [Team Data Science Process (TDSP)](https://github.com/Azure/Microsoft-TDSP) template provides a framework for such standardization.
 
-We had previously released a [GitHub repository for the TDSP project structure and templates](https://github.com/Azure/Azure-TDSP-ProjectTemplate). But it was not possible, until now to instantiate the TDSP structure and templates within a data science tool. We have now enabled creation of Azure Machine Learning Workbench projects that are instantiated with [TDSP structure and documentation templates for Azure Machine Learning Workbench](https://github.com/amlsamples/tdsp). Instructions on how to use TDSP structure and templates in Azure Machine Learning Workbench is provided [here](https://github.com/amlsamples/tdsp/blob/master/Docs/how-to-use-tdsp-in-azure-ml.md). Here we provide an example of how an actual machine learning project can be created using TDSP structure, populated with project-specific code, artifacts and documents, and executed within the Azure Machine Learning Workbench.
+We had previously released a [GitHub repository for the TDSP project structure and templates](https://github.com/Azure/Azure-TDSP-ProjectTemplate). But it was not possible, until now to instantiate the TDSP structure and templates within a data science tool. We have now enabled creation of Azure Machine Learning projects that are instantiated with [TDSP structure and documentation templates for Azure Machine Learning](https://github.com/amlsamples/tdsp). Instructions on how to use TDSP structure and templates in Azure Machine Learning is provided [here](https://github.com/amlsamples/tdsp/blob/master/Docs/how-to-use-tdsp-in-azure-ml.md). Here we provide an example of how an actual machine learning project can be created using TDSP structure, populated with project-specific code, artifacts and documents, and executed within the Azure Machine Learning.
 
 
 ### Purpose & Scope
 ### Purpose
-The primary purpose of this sample is to show how to instantiate and execute a machine learning project using the [Team Data Science Process (TDSP)](https://github.com/Azure/Microsoft-TDSP) structure and templates in Azure Machine Learning Workbench. For this purpose, we use the well-known [1994 US Census data from the UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/adult). The modeling task is to predict US annual income classes from US Census information (for example, age, race, education level, country of origin, etc.)
+The primary purpose of this sample is to show how to instantiate and execute a machine learning project using the [Team Data Science Process (TDSP)](https://github.com/Azure/Microsoft-TDSP) structure and templates in Azure Machine Learning. For this purpose, we use the well-known [1994 US Census data from the UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/adult). The modeling task is to predict US annual income classes from US Census information (for example, age, race, education level, country of origin, etc.)
 
 ### Scope
 
- * Data exploration, training, and deployment of a machine learning model which address the prediction problem described in the Use Case Overview below. 
- * Execution of the project in Azure Machine Learning Workbench using the Team Data Science Process (TDSP) template from Azure Azure Machine Learning Workbench Workbench for this project. For project execution and reporting, we're going to use the TDSP lifecycle below.
- * Operationalize the solution directly from Azure Machine Learning Workbench in Azure Container Services.
+ * Data exploration, training, and deployment of a machine learning model which address the prediction problem described in the Use Case Overview. 
+ * Execution of the project in Azure Machine Learning using the Team Data Science Process (TDSP) template from Azure Machine Learning for this project. For project execution and reporting, we're going to use the TDSP lifecycle .
+ * Operationalize the solution directly from Azure Machine Learning in Azure Container Services.
 
- The project highlights several features of Azure Machine Learning Workbench, such TDSP structure instantiation, execution of code in Jupyter notebooks as well as Python files, and easy operationalization in Azure Container Services using Docker and Kubernetes.
+ The project highlights several features of Azure Machine Learning, such TDSP structure instantiation, execution of code in Jupyter notebooks as well as Python files, and easy operationalization in Azure Container Services using Docker and Kubernetes.
 
 
 ## [Team Data Science Process (TDSP) Lifecycle](https://github.com/Azure/Microsoft-TDSP/blob/master/Docs/lifecycle-detail.md)
@@ -28,12 +28,12 @@ The primary purpose of this sample is to show how to instantiate and execute a m
 ### Required: Subscription, Hardware, Software
 1. An Azure [subscription](https://azure.microsoft.com/en-us/free/)
 2. This tutorial was tested on an Azure Data Science Virtual Machine (DSVM) Windows Server 2016, (VM Size: [DS3_V2](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes), with 4 virtual CPUs and 14-Gb RAM). 
-3. Please review documentation on Azure Machine Learning Workbench and its related services.
-4. Make sure that you have properly installed Azure Machine Learning Workbench by the [quick start installation guide](./quick-start-installation.md).
+3. Review documentation on Azure Machine Learning and its related services.
+4. Make sure that you have properly installed Azure Machine Learning by the [quick start installation guide](./quick-start-installation.md).
 
-The dataset for this sample is from the UCI ML Repository [[link]](https://archive.ics.uci.edu/ml/datasets/adult). It is taken from the 1994 US Census database and contains census and income information for about 50,000 individuals. This is structured dataset having numerical and categorical features, and a categorical target consisting of two income categories ('>50K' or '<=50K'). 
+The dataset for this sample is from the UCI ML Repository [[link]](https://archive.ics.uci.edu/ml/datasets/adult). It is taken from the 1994 US Census database and contains census and income information for about 50,000 individuals. This is structured dataset having numerical and categorical features, and a categorical target consisting of two income categories ('>50 K' or '<=50 K'). 
 
-### Informational: About Azure Machine Learning Workbench
+### Informational: About Azure Machine Learning
 * [FAQ - How to get started](faq.md)
 * [Overview](overview-what-is-azure-ml.md)
 * [Installation](quick-start-installation.md)
@@ -51,10 +51,10 @@ This data was extracted from the Census Bureau database found at: https://www.ce
 
 
 * There are a total of 48,842 instances (prior to any filtering), mix of continuous and discrete (train=32,561, test=16,281)
-* Probability for the label '>50K'  : 23.93% / 24.78% (without unknowns)
-* Probability for the label '<=50K' : 76.07% / 75.22% (without unknowns)  
+* Probability for the label '>50 K'  : 23.93% / 24.78% (without unknowns)
+* Probability for the label '<=50 K' : 76.07% / 75.22% (without unknowns)  
 
-* **TARGET**: Income class >50K, <=50K. These are replaced by 1 and 0 respectively in data preparation phase.
+* **TARGET**: Income class >50 K, <=50 K. These are replaced by 1 and 0 respectively in data preparation phase.
 * **FEATURES**: Age, work class, education level, education level, race, sex, hours of work per week, etc.
 
 
@@ -90,20 +90,16 @@ We created two models with 3-fold cross-validation: Elastic Net and Random fores
 We  deployed a web-service on a cluster in the [Azure Container Service (ACS)](https://azure.microsoft.com/en-us/services/container-service/). The operationalization environment provisions Docker and Kubernetes in the cluster to manage the web-service deployment. You can find further information on the operationalization process [here](model-management-service-deploy.md).
 
 
-### Final Reporting
+### [Final Project Report](https://github.com/Azure/MachineLearningSamples-TDSPUCIAdultIncome/ProjectReport.md)
 Details about each of the above sections are provided in the compiled final project report [ProjectReport](https://github.com/Azure/MachineLearningSamples-TDSPUCIAdultIncome/ProjectReport.md). The project report also contains further details about the use case, model performance metrics, deployment, and infrastructure on which the project was developed and deployed.
 
 
 ## Conclusion & Next Steps
 
-In this sample, we showed now to use TDSP structure and templates in Azure Machine Learning Workbench. We hope you use this feature of Azure Machine Learning Workbench to facilitate with project structure standardization and collaboration within your data science teams.
+In this sample, we showed now to use TDSP structure and templates in Azure Machine Learning. We hope you use this feature of Azure Machine Learning to facilitate with project structure standardization and collaboration within your data science teams.
 
 ## References
 
 Team Data Science Process (TDSP):  [https://github.com/Azure/Microsoft-TDSP](https://github.com/Azure/Microsoft-TDSP)
 
-TDSP project template for Azure Machine Learning Workbench: [https://github.com/amlsamples/tdsp](https://github.com/amlsamples/tdsp)
-
-## Contact
-
-Feel free to contact Debraj GuhaThakurta (debraj.guhathakurta@microsoft.com) or Xibin Gao (xibingao@microsoft.com) with any question or comments on this sample.
+TDSP project template for Azure Machine Learning: [https://github.com/amlsamples/tdsp](https://aka.ms/tdspamlgithubrepo)
