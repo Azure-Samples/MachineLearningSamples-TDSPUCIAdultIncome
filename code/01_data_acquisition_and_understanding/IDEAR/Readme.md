@@ -11,7 +11,10 @@ Then click on Start Notebook:
 
 The notebook will start Python 3 kernel. Then you can run the notebook cell-by-cell by using the '>|' run button on the top, or using the drop down "Cell" menu from the top, and selecting "Run All", which will run the entire notebook.
 
+You may get some errors during importing libraries. If there are missing libraries (eg.g. matplotlib, seaborn etc.), then open the Azure Machine Learning command-line from the "File" menu of the Azure Machine Learning workbench, and then install those libraries:
 
+    pip install matplotlib
+    pip install seaborn
 
 ### Primary IPython Notebook file
 **IDEAR.ipynb**: 
