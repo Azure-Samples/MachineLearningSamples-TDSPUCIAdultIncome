@@ -1,12 +1,15 @@
-# Docs
+# /docs
 
 In this folder we store html or markdown reports:
 
-## Docs/CustomerDocs: 
+## /docs/customer_docs: 
 This is the folder gives us a single point to store documents from the customer related to this engagement. As the repo will become large if you store Word, ppt, etc. files (especially if these are changing over time), please only store final documents here and utilize another location such as a Sharepoint (or similar shared resource) for working documents of that nature.
 
-## Docs/DeliverableDocs:
+## docs/deliverable_docs:
 This folder gives us a single point to store deliverable documents related to this engagement. As the repo will become large if you store Word, ppt, etc. files (especially if these are changing over time), please only store final documents here and utilize another location such as a Sharepoint (or similar resource) for working documents of that nature.
+
+### ProjectReport
+The primary Project Report is located in: docs/deliverable_docs/ProjectReport.md
 
 
 ## Notes:
