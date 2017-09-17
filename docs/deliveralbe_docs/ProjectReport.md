@@ -110,8 +110,5 @@ We then deployed a web-service on a cluster (see instructions on step 11 [here](
 
 [comment]: # (If there is a substantial change in the customer's business workflow, make a before/after diagram showing the data flow.)
 
-## Reference Documents
-* Version control repository - <Add your own link>
-* OneNote or other locations with important documents - <Add your own link>
-* [Documents from the Customer or Client](./Docs/CustomerDocs)
-* [Customer Deliverables](./Docs/DeliveralbeDocs)
+## References
+* Version control repository - https://github.com/Azure/MachineLearningSamples-TDSPUCIAdultIncome
