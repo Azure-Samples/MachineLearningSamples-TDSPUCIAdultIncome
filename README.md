@@ -34,7 +34,7 @@ The primary purpose of this sample is to show how to instantiate and execute a m
 ### Scope
 
  * Data exploration, training, and deployment of a machine learning model which address the prediction problem described in the Use Case Overview. 
- * Execution of the project in Azure Machine Learning using the Team Data Science Process (TDSP) template from Azure Machine Learning for this project. For project execution and reporting, we're going to use the TDSP lifecycle .
+ * Execution of the project in Azure Machine Learning using the Team Data Science Process (TDSP) template from Azure Machine Learning for this project. For project execution and reporting, we're going to use the TDSP lifecycle.
  * Operationalize the solution directly from Azure Machine Learning in Azure Container Services.
 
  The project highlights several features of Azure Machine Learning, such TDSP structure instantiation, execution of code in Jupyter notebooks as well as Python files, and easy operationalization in Azure Container Services using Docker and Kubernetes.
@@ -71,8 +71,8 @@ This data was extracted from the Census Bureau database found at: https://www.ce
 
 
 * There are a total of 48,842 instances (prior to any filtering), mix of continuous and discrete (train=32,561, test=16,281)
-* Probability for the label '>50 K'  : 23.93% / 24.78% (without unknowns)
-* Probability for the label '<=50 K' : 76.07% / 75.22% (without unknowns)  
+* Probability for the label '>50 K': 23.93% / 24.78% (without unknowns)
+* Probability for the label '<=50 K': 76.07% / 75.22% (without unknowns)  
 
 * **TARGET**: Income class >50 K, <=50 K. These are replaced by 1 and 0 respectively in data preparation phase.
 * **FEATURES**: Age, work class, education level, education level, race, sex, hours of work per week, etc.
