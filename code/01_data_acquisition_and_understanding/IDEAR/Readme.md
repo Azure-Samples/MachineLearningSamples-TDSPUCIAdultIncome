@@ -9,17 +9,20 @@ Then click on Start Notebook:
 
 <img src="./media/start-jupyter-nb.png" width="700" height="500">
 
-The notebook will start Python 3 kernel. Then you can run the notebook cell-by-cell by using the '>|' run button on the top, or using the drop down "Cell" menu from the top, and selecting "Run All", which will run the entire notebook.
+The notebook starts Python 3 kernel. Then you can run the notebook cell-by-cell by using the '>|' run button on the top, or using the drop down "Cell" menu from the top, and selecting "Run All", which will run the entire notebook.
 
-You may get some errors during importing libraries. If there are missing libraries (eg.g. matplotlib, seaborn etc.), then open the Azure Machine Learning command-line from the "File" menu of the Azure Machine Learning workbench, and then install those libraries:
+You may get some errors during importing libraries. If there are missing libraries (eg.g. matplotlib, seaborn etc.), then open the Azure Machine Learning command line from the "File" menu of the Azure Machine Learning workbench, and then install those libraries:
 
     pip install matplotlib
     pip install seaborn
 
 ### Primary IPython Notebook file
 **IDEAR.ipynb**: 
-
+This is the primary IPython notebook file, which when executed provides the interactive plots and summaries, which can subsequently saved as a standardized data exploration report.
 
 ### Settings YAML file
 **para-adult.yaml**: 
 
+This is the settings file for IDEAR.ipnb. This specifies location of input data file, numerical, and categorical variables etc.
+
+<img src="./media/adult_para.png" width="600" height="500">

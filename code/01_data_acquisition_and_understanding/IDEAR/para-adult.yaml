@@ -1,5 +1,5 @@
 DataFilePath:
-    - ..\\..\\..\\Sample_Data\\uci_income_train.csv
+    - ..\\..\\..\\sample_data\\uci_income_train.csv
 Target:
     income
 CategoricalColumns:
