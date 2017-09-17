@@ -67,6 +67,7 @@ workclass, marital-status, occupation, relationship, race, sex, and native-count
 
 In addition, we removed rows where the native-country was not one of the ones from which > 100 individuals were recorded. There were < 10 native-countries from where more than 100 individuals were recorded in the 1994 census. Having few individuals from a native-country could result in unstable models for individuals those native-countries, and cause issues with differences between the training and test sets.
 
+
 **One-hot encoding categorical features**
 
 Following categorical features were one-hot encoded using Scikit-learn's [preprocessing.OneHotEncoder()](http://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html) function: 'workclass', marital-status, occupation, relationship, race, sex, native_country. So the same encodings are maintained in test set, when applying transformation to test set, we fit the transformation model on the training set and then transformed the test set. 
@@ -84,6 +85,15 @@ We created two models with 3-fold cross-validation: Elastic net and Random fores
 
 ### Model evaluation
 Accuracy of the models were measured using AUC on the test data set. AUC of both Elastic net and Random forest models were > 0.85. We save both models in pickled.pkl files, and output the ROC plots for both models. In addition, feature importances for the Random forest model are output in a .csv file and plotted in a pdf (top predictive features only).
+
+ROC curve of **Random Forest model (Left)** on test data is shown below. This was the model that was deployed:
+
+<img src="./images/rf-auc.png" width="400" height="350">
+
+Importance of features from the Random Forest model is shown below:
+
+<img src="./images/featImportance.png" width="700" height="450">
+
 
 ## 4. [**Deployment**](https://github.com/Azure/MachineLearningSamples-TDSPUCIAdultIncome/tree/master/code/03_deployment)
 AUC of both Elastic net and Random forest models were > 0.85. Therefore, per criteria for the threshold for minimum accuracy required for deployment, both models are suitable for deployment. Deployment is performed using Azure Container Services using Azure Machine Learning command-line utilities (CLI).
