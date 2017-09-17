@@ -5,7 +5,8 @@ Documentation on how to use IDEAR in Python 3 is available in detail [here](http
 
 In your Azure Machine Learning project in Windows Data Science Virtual Machine (DSVM), double-click on the IDEAR.ipnb in: .\code\01_data_acquisition_and_understanding\IDEAR\
 
-Then click on Start Note
+Then click on Start Notebook:
+
 <img src="./media/start-jupyter-nb.png" width="700" height="500">
 
 The notebook will start Python 3 kernel. Then you can run the notebook cell-by-cell by using the '>|' run button on the top, or using the drop down "Cell" menu from the top, and selecting "Run All", which will run the entire notebook.
