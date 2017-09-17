@@ -92,7 +92,7 @@ ROC curve of **Random Forest model (Left)** on test data is shown below. This wa
 
 Importance of features from the Random Forest model is shown below:
 
-<img src="./images/featImportance.png" width="700" height="450">
+<img src="./images/featImportance.png" width="800" height="450">
 
 
 ## 4. [**Deployment**](https://github.com/Azure/MachineLearningSamples-TDSPUCIAdultIncome/tree/master/code/03_deployment)
