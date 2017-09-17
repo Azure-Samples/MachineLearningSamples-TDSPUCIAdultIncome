@@ -1,4 +1,4 @@
-# Code/01\_Data\_Acquisition_and_Understanding
+# /code/01\_data\_acquisition\_and\_understanding
 
 For source code files associated with data preparation. Data preparation includes one or more of the following steps (not exhaustive):
 
@@ -21,3 +21,8 @@ For further information on data feature and defnintion, you can read this docume
 ### Main.py:
     Purpose: call function in DataPreparation.py to download data
     Language: Python
+    How it is used: From Azure Machine Learning command line
+    >python Main.py
+
+### IDEAR:
+For generating standardized data exploration report, we use the [IDEAR utility in Python 3](https://github.com/Azure/Azure-TDSP-Utilities/tree/master/DataScienceUtilities/DataReport-Utils/Python). Further information on this is available in the IDEAR folder.

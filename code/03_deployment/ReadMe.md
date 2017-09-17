@@ -1,4 +1,4 @@
-# Code\/03_Deployment
+# code\/03_deployment
 
 We provide information about each of the files used for deployment.
 
@@ -8,3 +8,7 @@ We provide information about each of the files used for deployment.
     How it gets used: used in deployment
     init: load machine learning model 
     run: predict with machine learning model
+
+## service_schema.json
+
+## How to treat the model (.pkl) file for deployment
