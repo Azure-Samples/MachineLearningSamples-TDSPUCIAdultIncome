@@ -66,7 +66,7 @@ For this project, we use the TDSP folder structure and documentation templates (
 Project is created based on instructions provided [here](https://aka.ms/how-to-use-tdsp-in-aml).
 
 
-<img src="./docs/images/instantiation-3.png" width="900" height="500">
+<img src="./docs/images/instantiation-4.png" width="900" height="800">
 
 
 The step-by-step data science workflow was as follows:
