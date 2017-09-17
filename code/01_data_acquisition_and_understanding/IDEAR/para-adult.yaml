@@ -1,0 +1,21 @@
+DataFilePath:
+    - ..\\..\\..\\Sample_Data\\uci_income_train.csv
+Target:
+    income
+CategoricalColumns:
+    - workclass
+    - education
+    - marital_status
+    - occupation
+    - relationship
+    - race
+    - sex
+    - native_country
+    - income
+NumericalColumns:
+    - age 
+    - fnlwgt
+    - education_num
+    - capital_gain
+    - capital_loss
+    - hours_per_week
