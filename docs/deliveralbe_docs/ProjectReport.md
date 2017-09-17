@@ -33,7 +33,8 @@ The project is executed by one data scientist and a data engineer. Data engineer
 ### Metrics
 Performance of the machine learning models will be evaluated on the test set provided by the UCI data repository [[link]](https://archive.ics.uci.edu/ml/machine-learning-databases/adult/). Accuracy is measured and reported using AUC. AUC of > 0.8 will be considered acceptable and suitable for deployment.
 
-## 2. Data Acquisition and Understanding
+## 2. [**Data Acquisition and Understanding**](https://github.com/Azure/MachineLearningSamples-TDSPUCIAdultIncome/tree/master/code/01_data_acquisition_and_understanding)
+
 ### Raw Data
 For detailed information about the data, please see the [description](https://archive.ics.uci.edu/ml/machine-learning-databases/adult/adult.names) in the UCI repository. 
 
@@ -55,7 +56,7 @@ Data exploration is performed using the Python 3 [IDEAR (Interactive Data Explor
 The location of the final data exploration report is here: (.\Docs\DeliveralbeDocs\IDEAR.html).
 
 
-## 3. Modeling
+## 3. [**Modeling**](https://github.com/Azure/MachineLearningSamples-TDSPUCIAdultIncome/tree/master/code/02_modeling)
 
 ### Feature Engineering
 **Data cleanup: Removing columns and rows**
@@ -84,7 +85,7 @@ We created two models with 3-fold cross-validation: Elastic net and Random fores
 ### Model evaluation
 Accuracy of the models were measured using AUC on the test data set. AUC of both Elastic net and Random forest models were > 0.85. We save both models in pickled.pkl files, and output the ROC plots for both models. In addition, feature importances for the Random forest model are output in a .csv file and plotted in a pdf (top predictive features only).
 
-## 4. Deployment
+## 4. [**Deployment**](https://github.com/Azure/MachineLearningSamples-TDSPUCIAdultIncome/tree/master/code/03_deployment)
 AUC of both Elastic net and Random forest models were > 0.85. Therefore, per criteria for the threshold for minimum accuracy required for deployment, both models are suitable for deployment. Deployment is performed using Azure Container Services using Azure Machine Learning command-line utilities (CLI).
 
 
