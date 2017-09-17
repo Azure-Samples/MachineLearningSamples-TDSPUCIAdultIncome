@@ -50,7 +50,7 @@ TARGET: Income class >50 K, <=50 K.
 
 FEATURES: Age, work class, education level, education level, race, sex, hours of work per week, etc.
 
-### Data Exploration with IDEAR Utility
+### [Data Exploration with IDEAR Utility](https://github.com/Azure/MachineLearningSamples-TDSPUCIAdultIncome/tree/master/code/01_data_acquisition_and_understanding/IDEAR)
 Data exploration is performed using the Python 3 [IDEAR (Interactive Data Exploration and Reporting) utility](https://github.com/Azure/Azure-TDSP-Utilities/tree/master/DataScienceUtilities/DataReport-Utils/Python) published as a part of [TDSP suite of data science tools](https://github.com/Azure/Azure-TDSP-Utilities). This utility helps to generate standardized data exploration reports for data containing numerical and categorical features and target. Details of how the Python 3 IDEAR utility was used is provided below. 
 
 The location of the final data exploration report is here: (.\Docs\DeliveralbeDocs\IDEAR.html).
@@ -79,7 +79,7 @@ Numerical features (other than the ones above) were standardized using Scikit-le
 
 Training and test data sets were pickled and saved as .pkl files for input into modeling (training data), and model evaluation or deployment (test data).
 
-### Modeling
+### Modeling training
 We created two models with 3-fold cross-validation: Elastic net and Random forest. We used [59-point sampling](http://www.jmlr.org/papers/volume13/bergstra12a/bergstra12a.pdf) for random grid search as a strategy for cross-validation. 
 
 ### Model evaluation
