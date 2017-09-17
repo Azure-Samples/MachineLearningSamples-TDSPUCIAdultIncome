@@ -1,4 +1,4 @@
-# Code/02_Modeling
+# /code/02_modeling
 
 We provide a description of each of the files and their function. 
 
