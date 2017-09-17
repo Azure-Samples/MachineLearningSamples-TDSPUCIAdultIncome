@@ -22,7 +22,7 @@ The primary purpose of this sample is to show how to instantiate and execute a m
 
 ## [Team Data Science Process (TDSP) Lifecycle](https://github.com/Azure/Microsoft-TDSP/blob/master/Docs/lifecycle-detail.md)
 
-<img src="./Images/tdsp-lifecycle.jpg" width="800" height="600">
+<img src="./docs/images/tdsp-lifecycle.jpg" width="800" height="600">
 
 ## Pre-requisites
 ### Required: Subscription, Hardware, Software
@@ -66,7 +66,7 @@ For this project, we use the TDSP folder structure and documentation templates (
 Project is created based on instructions provided [here](https://aka.ms/how-to-use-tdsp-in-aml).
 
 
-<img src="./Images/instantiation-3.png" width="900" height="500">
+<img src="./docs/images/instantiation-3.png" width="900" height="500">
 
 
 The step-by-step data science workflow was as follows:
@@ -79,7 +79,7 @@ Data exploration is performed using the Python 3 [IDEAR (Interactive Data Explor
 
 The location of the final data exploration report is [here](https://github.com/Azure/MachineLearningSamples-TDSPUCIAdultIncome/tree/master/Docs/DeliveralbeDocs). A view of the IDEAR report is shown below:
 
-<img src="./docs/Images/idear.png" width="800" height="700">
+<img src="./docs/images/idear.png" width="800" height="700">
 
 * [**Modeling**](https://github.com/Azure/MachineLearningSamples-TDSPUCIAdultIncome/tree/master/Code/02_Modeling)
 
