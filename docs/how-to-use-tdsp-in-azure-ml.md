@@ -80,7 +80,7 @@ The TDSP project template contains following top-level folders:
 2. **docs**: Contains necessary documentation about the project (for example, Markdown files, related media etc.)
 3. **sample_data**: Contains **SAMPLE (small)** data that can be used for early development or testing. Typically, not more than several (5) Mbs. Not for full or large data-sets.
 
-<img src="./images/instantiation-3.png" width="750" height="500">
+<img src="./images/instantiation-3.png" width="750" height="550">
 
 
 ## Using The TDSP Structure and Templates
