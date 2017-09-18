@@ -84,9 +84,9 @@ This data was extracted from the Census Bureau database found at: https://www.ce
 ## Project Structure And Reporting
 
 ### Structure
-For this project, we use the TDSP folder structure and documentation templates (Figure 1), which follows the [TDSP lifecycle](https://github.com/Azure/Microsoft-TDSP/blob/master/Docs/lifecycle-detail.md). 
+For this project, we use the TDSP folder structure and documentation templates (below), which follows the [TDSP lifecycle](https://github.com/Azure/Microsoft-TDSP/blob/master/Docs/lifecycle-detail.md). 
 
-Project is created based on instructions provided [here](https://aka.ms/how-to-use-tdsp-in-aml).
+Project is created based on instructions provided [here](https://aka.ms/how-to-use-tdsp-in-aml). After it is filled with the project's code and artifacts, the structure looks as follows (see project structure boxed in red in figure below).
 
 
 <img src="./docs/images/instantiation-4.png" width="900" height="700">
