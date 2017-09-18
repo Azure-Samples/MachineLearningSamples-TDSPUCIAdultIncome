@@ -137,3 +137,5 @@ In this sample, we showed now to use TDSP structure and templates in Azure Machi
 [Team Data Science Process (TDSP)](https://github.com/Azure/Microsoft-TDSP)
 
 [TDSP project template for Azure Machine Learning](https://aka.ms/tdspamlgithubrepo)
+
+[US Income data-set from UCI ML repository](https://archive.ics.uci.edu/ml/datasets/adult)
