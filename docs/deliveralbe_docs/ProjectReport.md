@@ -122,4 +122,4 @@ Service is run in the Azure Container Service (ACS). The operationalization envi
 
 ## References
 * [Project Repository in GitHub](https://github.com/Azure/MachineLearningSamples-TDSPUCIAdultIncome)
-* [TDSP project template](https://aka.ms/tdspamlgithubrepo)
+* [TDSP project template for Azure Machine Learning](https://aka.ms/tdspamlgithubrepo)
