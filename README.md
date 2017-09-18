@@ -100,7 +100,7 @@ Data was downloaded in .csv form from URLs at UCI ML Repository [[link]](https:/
 
 Data exploration is performed using the Python 3 [IDEAR (Interactive Data Exploration and Reporting) utility](https://github.com/Azure/Azure-TDSP-Utilities/tree/master/DataScienceUtilities/DataReport-Utils/Python) published as a part of [TDSP suite of data science tools](https://github.com/Azure/Azure-TDSP-Utilities). This utility helps to generate standardized data exploration reports for data containing numerical and categorical features and target. Details of how the Python 3 IDEAR utility was used is provided below. 
 
-The location of the final data exploration report is [IDEAR.html](https://github.com/Azure/MachineLearningSamples-TDSPUCIAdultIncome/tree/master/docs/deliveralbe_docs). A view of the IDEAR report is shown below:
+The location of the final data exploration report is [IDEAR.html](https://github.com/Azure/MachineLearningSamples-TDSPUCIAdultIncome/tree/master/docs/deliverable_docs). A view of the IDEAR report is shown below:
 
 <img src="./docs/images/idear.png" width="800" height="700">
 
@@ -112,11 +112,11 @@ AUC of both Elastic Net and Random Forest models were > 0.85. We save both model
 
 ROC curve of **Random Forest model** on test data is shown below. This was the model that was deployed:
 
-<img src="./docs/deliveralbe_docs/images/rf-auc.png" width="400" height="350">
+<img src="./docs/deliverable_docs/images/rf-auc.png" width="400" height="350">
 
 Feature importance (top 20) of Random Forest model is shown below. It shows features capital gain amount, eduction, marital status, have highest feature importance.
 
-<img src="./docs/deliveralbe_docs/images/featImportance.png" width="600" height="350">
+<img src="./docs/deliverable_docs/images/featImportance.png" width="600" height="350">
 
 
 * [**Deployment**](https://github.com/Azure/MachineLearningSamples-TDSPUCIAdultIncome/tree/master/code/03_deployment)
@@ -124,8 +124,8 @@ Feature importance (top 20) of Random Forest model is shown below. It shows feat
 We  deployed a web-service on a cluster in the [Azure Container Service (ACS)](https://azure.microsoft.com/en-us/services/container-service/). The operationalization environment provisions Docker and Kubernetes in the cluster to manage the web-service deployment. You can find further information on the operationalization process [here](model-management-service-deploy.md).
 
 
-### [Final Project Report](https://github.com/Azure/MachineLearningSamples-TDSPUCIAdultIncome/blob/master/docs/deliveralbe_docs/ProjectReport.md)
-Details about each of the above sections are provided in the compiled final project report [ProjectReport](https://github.com/Azure/MachineLearningSamples-TDSPUCIAdultIncome/blob/master/docs/deliveralbe_docs/ProjectReport.md). The project report also contains further details about the use case, model performance metrics, deployment, and infrastructure on which the project was developed and deployed.
+### [Final Project Report](https://github.com/Azure/MachineLearningSamples-TDSPUCIAdultIncome/blob/master/docs/deliverable_docs/ProjectReport.md)
+Details about each of the above sections are provided in the compiled final project report [ProjectReport](https://github.com/Azure/MachineLearningSamples-TDSPUCIAdultIncome/blob/master/docs/deliverable_docs/ProjectReport.md). The project report also contains further details about the use case, model performance metrics, deployment, and infrastructure on which the project was developed and deployed.
 
 
 ## Conclusion & Next Steps
