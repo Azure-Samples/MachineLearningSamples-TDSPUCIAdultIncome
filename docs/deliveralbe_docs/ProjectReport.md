@@ -121,5 +121,5 @@ Service is run in the Azure Container Service (ACS). The operationalization envi
 [comment]: # (If there is a substantial change in the customer's business workflow, make a before/after diagram showing the data flow.)
 
 ## References
-* Version control repository - https://github.com/Azure/MachineLearningSamples-TDSPUCIAdultIncome
-* TDSP project template - https://aka.ms/tdspamlgithubrepo
+* [Project Repository in GitHub](https://github.com/Azure/MachineLearningSamples-TDSPUCIAdultIncome)
+* [TDSP project template](https://aka.ms/tdspamlgithubrepo)
