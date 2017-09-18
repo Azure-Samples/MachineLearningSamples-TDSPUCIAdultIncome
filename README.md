@@ -106,11 +106,17 @@ The location of the final data exploration report is [IDEAR.html](https://github
 
 * [**Modeling**](https://github.com/Azure/MachineLearningSamples-TDSPUCIAdultIncome/tree/master/code/02_modeling)
 
-We created two models with 3-fold cross-validation: Elastic Net and Random forest. We used [59-point sampling](http://www.jmlr.org/papers/volume13/bergstra12a/bergstra12a.pdf)  for random grid search as a strategy for cross-validation and model parameter optimization. Accuracy of the models were measured using AUC (Area under curve) on the test data set. AUC of both Elastic Net and Random Forest models were > 0.85. We save both models in pickled.pkl files, and output the ROC plots for both models. In addition, for model interpretation, feature importance for the Random Forest model are output in a .csv file and plotted in a pdf (top predictive features only).
+We created two models with 3-fold cross-validation: Elastic Net and Random forest. We used [59-point sampling](http://www.jmlr.org/papers/volume13/bergstra12a/bergstra12a.pdf)  for random grid search as a strategy for cross-validation and model parameter optimization. Accuracy of the models were measured using AUC (Area under curve) on the test data set. 
 
-ROC curve of **Random Forest model (Left)** on test data is shown below. This was the model that was deployed:
+AUC of both Elastic Net and Random Forest models were > 0.85. We save both models in pickled.pkl files, and output the ROC plots for both models. AUC of Random Forest model was 0.92 and that of the Elastic Net model was 0.90. In addition, for model interpretation, feature importance for the Random Forest model are output in a .csv file and plotted in a pdf (top 20 predictive features only).
+
+ROC curve of **Random Forest model** on test data is shown below. This was the model that was deployed:
 
 <img src="./docs/deliveralbe_docs/images/rf-auc.png" width="400" height="350">
+
+Feature importance (top 20) of Random Forest model is shown below. It shows features capital gain amount, eduction, marital status, have highest feature importance.
+
+<img src="./docs/deliveralbe_docs/images/featImportance.png" width="600" height="350">
 
 
 * [**Deployment**](https://github.com/Azure/MachineLearningSamples-TDSPUCIAdultIncome/tree/master/code/03_deployment)

@@ -101,7 +101,7 @@ AUC of both Elastic net and Random forest models were > 0.85. Therefore, per cri
 
 ## Architecture & Environments
 #### Development
-We used an Azure Data Science Virtual Machine (DSVM) Windows Server 2016, (VM Size: [DS3_V2](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes), with 4 virtual CPUs and 14-Gb RAM). Azure Machine Learning is installed on the DSVM. 
+An [Azure Data Science Virtual Machine (DSVM) Windows Server 2016](https://azuremarketplace.microsoft.com/marketplace/apps/microsoft-ads.windows-data-science-vm), (VM Size: [DS3_V2](https://docs.microsoft.com/azure/virtual-machines/windows/sizes), with 4 virtual CPUs and 14-Gb RAM). Although tested on an Azure DSVM.
 
 We used the TDSP template in Azure Machine Learning to create a new project, and all code and documents were developed in this project. Instructions on how to create a new project in TDSP format is provided [here](https://github.com/amlsamples/tdsp/blob/master/Docs/how-to-use-tdsp-in-azure-ml.md).
 
@@ -113,12 +113,13 @@ Outputs generated from data preparation and modeling stages are stored in: C:\\T
 For deployment, we copied the following files in the project root directory:
 1. Json file for input data format
 2. The pickled Random Forest model file (CVRandomForesstModel.pkl) 
-3. The scoring script, score.py, from the Code\Deployment folder
+3. The scoring script, score.py, from the .\code\deployment folder
 
-We then deployed a web-service on a cluster (see instructions on step 11 [here](https://github.com/Azure/ViennaDocs/blob/master/Documentation/tutorial-classifying-iris.md)). In cluster mode,  service is run in the Azure Container Service (ACS). The operationalization environment provisions Docker and Kubernetes in the cluster to manage the web service deployment.
+Service is run in the Azure Container Service (ACS). The operationalization environment provisions Docker and Kubernetes in the cluster to manage the web service deployment.
 
 
 [comment]: # (If there is a substantial change in the customer's business workflow, make a before/after diagram showing the data flow.)
 
 ## References
 * Version control repository - https://github.com/Azure/MachineLearningSamples-TDSPUCIAdultIncome
+* TDSP project template - https://aka.ms/tdspamlgithubrepo
