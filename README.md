@@ -138,9 +138,17 @@ Details about each of the above sections are provided in the compiled final proj
 
 ## Conclusion & Next Steps
 
-In this sample, we showed now to use TDSP structure and templates in Azure Machine Learning. We hope you use this feature of Azure Machine Learning to facilitate with project structure standardization and collaboration within your data science teams.
+In this sample, we showed now to use TDSP structure and templates in Azure Machine Learning. Through the document and artifact templates you can:
+1. Properly define purpose and scope of a project
+2. Structure and execute projects according to the TDSP lifecycle stages
+3. Develop standardized reports using TDSP data science utilities (such as the IDEAR data exploration and visualization report).
+4. Prepare a final data science project report that can be delivered to a client. 
 
-## References
+We hope you use this feature of Azure Machine Learning to facilitate with project structure standardization and collaboration within your data science teams.
+
+## Next Steps: See References Below to Get Started
+
+[How to use Team Data Science Process (TDSP) in Azure Machine Learning](https://aka.ms/how-to-use-tdsp-in-aml)
 
 [Team Data Science Process (TDSP)](https://github.com/Azure/Microsoft-TDSP)
 
