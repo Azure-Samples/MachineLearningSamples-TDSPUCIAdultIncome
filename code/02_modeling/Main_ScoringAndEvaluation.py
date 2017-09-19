@@ -9,7 +9,7 @@ from ScoringAndEvaluation import Get_Class_Probabilities, Evaluate_Predictions
 #####################################################################################################
 # SET FILE LOCATION, LOCATION TO TEST DATA AND MODEL FILE
 #####################################################################################################
-dirpath = '.\\outputs'
+dirpath = os.environ['AZUREML_NATIVE_SHARE_DIRECTORY']
 
 
 # Transformed test data for scoring

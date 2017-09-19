@@ -7,7 +7,7 @@ from DataPreparation import downloaddata
 #############################################
 if __name__ == '__main__':
 
-    dest_folder = '.\\outputs'
+    dest_folder = os.environ['AZUREML_NATIVE_SHARE_DIRECTORY']
     trainfilename = 'uci_income_train.csv'
     testfilename = 'uci_income_test.csv'
 

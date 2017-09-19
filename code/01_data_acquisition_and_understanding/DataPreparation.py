@@ -9,8 +9,8 @@ import requests
 
 ## download data from web to local
 def downloaddata(dest_folder, trainfilename, testfilename):
-    trainfile = os.path.join(dest_folder,trainfilename)
-    testfile = os.path.join(dest_folder,testfilename)
+    trainfile = dest_folder + trainfilename
+    testfile = dest_folder + testfilename
     os.makedirs(os.path.dirname(trainfile), exist_ok=True)
     os.makedirs(os.path.dirname(testfile), exist_ok=True)
     colnames = ['age','workclass','fnlwgt','education','education_num','marital_status','occupation','relationship','race','sex','capital_gain','capital_loss','hours_per_week','native_country','income']
