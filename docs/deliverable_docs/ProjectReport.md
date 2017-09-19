@@ -84,7 +84,7 @@ Training and test data sets were pickled and saved as .pkl files for input into 
 We created two models with 3-fold cross-validation: Elastic net and Random forest. We used [59-point sampling](http://www.jmlr.org/papers/volume13/bergstra12a/bergstra12a.pdf) for random grid search as a strategy for cross-validation. 
 
 ### Model evaluation
-Accuracy of the models were measured using AUC on the test data set. AUC of both Elastic net and Random forest models were > 0.85. We save both models in pickled.pkl files, and output the ROC plots for both models. In addition, feature importances for the Random forest model are output in a .csv file and plotted in a pdf (top predictive features only).
+Accuracy of the models were measured using AUC on the test data set. AUC of both Elastic Net and Random Forest models were > 0.85. We save both models in pickled.pkl files, and output the ROC plots for both models. AUC of Random Forest model was 0.92 and that of the Elastic Net model was 0.90. In addition, for model interpretation, feature importance for the Random Forest model are output in a .csv file and plotted in a pdf (top 20 predictive features only). 
 
 ROC curve of **Random Forest model (Left)** on test data is shown below. This was the model that was deployed:
 
@@ -95,11 +95,13 @@ Importance of features from the Random Forest model is shown below:
 <img src="./images/featImportance.png" width="800" height="450">
 
 
+
 ## 4. [**Deployment**](https://github.com/Azure/MachineLearningSamples-TDSPUCIAdultIncome/tree/master/code/03_deployment)
-AUC of both Elastic net and Random forest models were > 0.85. Therefore, per criteria for the threshold for minimum accuracy required for deployment, both models are suitable for deployment. Deployment is performed using Azure Container Services using Azure Machine Learning command-line utilities (CLI).
+We deployed the Random Forest Model. Deployment is performed using Azure Container Services using Azure Machine Learning command-line utilities (CLI).
 
 
-## Architecture & Environments
+## Architecture, Environments, Code Execution
+
 #### Development
 An [Azure Data Science Virtual Machine (DSVM) Windows Server 2016](https://azuremarketplace.microsoft.com/marketplace/apps/microsoft-ads.windows-data-science-vm), (VM Size: [DS3_V2](https://docs.microsoft.com/azure/virtual-machines/windows/sizes), with 4 virtual CPUs and 14-Gb RAM). Although tested on an Azure DSVM.
 
@@ -116,6 +118,15 @@ For deployment, we copied the following files in the project root directory:
 3. The scoring script, score.py, from the .\code\deployment folder
 
 Service is run in the Azure Container Service (ACS). The operationalization environment provisions Docker and Kubernetes in the cluster to manage the web service deployment.
+
+#### Code Execution
+In this example, we execute code in **local compute environment** only. Refer to Azure Machine Learning documents for execution details and further options.
+
+Executing a Python script in a local Python runtime is easy:
+
+    az ml experiment submit -c local my_script.py
+
+IPython notebook files can be double-clicked from the project structure on the left of the Azure Machine Learning UI and run in the Jypyter Notebook Server.
 
 
 [comment]: # (If there is a substantial change in the customer's business workflow, make a before/after diagram showing the data flow.)

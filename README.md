@@ -81,7 +81,7 @@ This data was extracted from the Census Bureau database found at: https://www.ce
 * **FEATURES**: Age, work class, education level, education level, race, sex, hours of work per week, etc.
 
 
-## Project Structure And Reporting
+## Project Structure, Execution And Reporting
 
 ### Structure
 For this project, we use the TDSP folder structure and documentation templates (below), which follows the [TDSP lifecycle](https://github.com/Azure/Microsoft-TDSP/blob/master/Docs/lifecycle-detail.md). 
@@ -91,6 +91,14 @@ Project is created based on instructions provided [here](https://aka.ms/how-to-u
 
 <img src="./docs/images/instantiation-4.png" width="900" height="700">
 
+### Execution
+In this example, we execute code in **local compute environment** only. Refer to Azure Machine Learning documents for execution details and further options.
+
+Executing a Python script in a local Python runtime is easy:
+
+    az ml experiment submit -c local my_script.py
+
+IPython notebook files can be double-clicked from the project structure on the left of the Azure Machine Learning UI and run in the Jypyter Notebook Server.
 
 The sequential data science workflow was as follows:
 
