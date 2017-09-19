@@ -32,7 +32,7 @@ We had previously released a [GitHub repository for the TDSP project structure a
 
 ### Purpose & Scope
 ### Purpose
-The primary purpose of this sample is to show how to instantiate and execute a machine learning project using the [Team Data Science Process (TDSP)](https://github.com/Azure/Microsoft-TDSP) structure and templates in Azure Machine Learning. For this purpose, we use the well-known [1994 US Census data from the UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/adult). The modeling task is to predict US annual income classes from US Census information (for example, age, race, education level, country of origin, etc.)
+The purpose of this sample is to show how to instantiate and execute a machine learning project using the [Team Data Science Process (TDSP)](https://github.com/Azure/Microsoft-TDSP) structure and templates in Azure Machine Learning. For this purpose, we use the well-known [1994 US Census data from the UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/adult). The modeling task is to predict US annual income classes from US Census information (for example, age, race, education level, country of origin, etc.)
 
 ### Scope
 
@@ -92,7 +92,7 @@ Project is created based on instructions provided [here](https://aka.ms/how-to-u
 <img src="./docs/images/instantiation-4.png" width="900" height="700">
 
 
-The step-by-step data science workflow was as follows:
+The sequential data science workflow was as follows:
 
 * [**Data Acquisition and Understanding**](https://github.com/Azure/MachineLearningSamples-TDSPUCIAdultIncome/tree/master/code/01_data_acquisition_and_understanding)
 

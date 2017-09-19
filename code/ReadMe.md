@@ -2,6 +2,9 @@
 
 This directory contains all the source code for the project. There are three sub-directories, adhering to the stages of the TDSP lifecycle.
 
+The code sections are organized below in sequential order in which they are to be run.
+
+
 ## /code/01\_data\_acquisition\_and\_understanding
 This folder contains code for data preparation and exploratory analyses. It also contains any necessary settings files needed to run the data exploration code. 
 
@@ -20,3 +23,29 @@ Details about the code used in modeling is provided in [code/02_modeling](https:
 
 ## code/03_deployment
 This folder contains code related to deployment of the Random Forest model in Azure Container Services. Details about the code used in deployment is provided in [code/03_deployment](https://github.com/Azure/MachineLearningSamples-TDSPUCIAdultIncome/tree/master/code/03_deployment).
+
+## Execution
+### Code run in local compute context
+In this example, we execute code in **local compute environment** only. Executing a Python script in a local Python runtime is easy:
+
+    az ml experiment submit -c local my_script.py
+
+Please refer to Azure Machine Learning documents for execution details and further options.
+
+### Installation of required libraries
+Before you start executing code, from inside the project, go to file menu and open command prompt. Then install the following libraries:
+
+    pip install ipywidgets==5.2.2
+    pip install matplotlib
+    pip install scikit-learn
+    pip install pandas
+    pip install requests
+    pip install seaborn
+    pip install io
+    pip install os
+    pip install json
+    pip install pickle
+
+### Enable Jupyter nbextension
+    jupyter nbextension enable --py --sys-prefix widgetsnbextension
+
