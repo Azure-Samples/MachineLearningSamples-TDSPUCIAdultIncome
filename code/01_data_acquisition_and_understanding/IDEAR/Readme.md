@@ -11,14 +11,11 @@ Then click on Start Notebook:
 
 The notebook starts Python 3 kernel. Then you can run the notebook cell-by-cell by using the '>|' run button on the top, or using the drop down "Cell" menu from the top, and selecting "Run All", which will run the entire notebook.
 
-You may get some errors during importing libraries. If there are missing libraries (eg.g. matplotlib, seaborn etc.), then open the Azure Machine Learning command line from the "File" menu of the Azure Machine Learning workbench, and then install those libraries:
-
-    pip install matplotlib
-    pip install seaborn
-
 ### Primary IPython Notebook file
 **IDEAR.ipynb**: 
 This is the primary IPython notebook file, which when executed provides the interactive plots and summaries, which can subsequently saved as a standardized data exploration report.
+
+Briefly, you will need to double-click on the IDEAR.ipnb IPython notebook. Then click on "Start Jupyter Notebook Server" at the top, and then run the entire notebook.  Then interactively change certain settings for data exploration or plotting. And, finally output a final report from it. The final report will saved in docs/deliverable_docs folder.
 
 ### Settings YAML file
 **para-adult.yaml**: 
@@ -26,3 +23,14 @@ This is the primary IPython notebook file, which when executed provides the inte
 This is the settings file for IDEAR.ipnb. This specifies location of input data file, numerical, and categorical variables etc.
 
 <img src="./media/adult_para.png" width="600" height="500">
+
+### IDEAR Report
+Report from IDEAR is in ./docs/deliverable_docs/IDEAR.html. It can be one of the deliverables to your client. 
+
+<img src="../../../docs/images/idear.png" width="700" height="600">
+
+
+An example image from that report is given below. This figure shows disrribution of one of the numerical features (age). The red box indicates that  you can change this feature to another numerical feature to get distribution properties.
+
+<img src="./media/explore-numerical.png" width="600" height="400">
+
