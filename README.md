@@ -56,6 +56,9 @@ The purpose of this sample is to show how to instantiate and execute a machine l
 
 The dataset for this sample is from the UCI ML Repository [[link]](https://archive.ics.uci.edu/ml/datasets/adult). It is taken from the 1994 US Census database and contains census and income information for about 50,000 individuals. This is structured dataset having numerical and categorical features, and a categorical target consisting of two income categories ('>50 K' or '<=50 K'). 
 
+### Optional: Version Control Repository
+If you would like to save and version your project and its contents, you need to have a version control repository where this can be done. You can enter the Git repository location while creating the new project using the TDSP template in Azure Machine Learning.
+
 ### Informational: About Azure Machine Learning
 * [FAQ - How to get started](faq.md)
 * [Overview](overview-what-is-azure-ml.md)
@@ -135,14 +138,16 @@ We  deployed a web-service on a cluster in the [Azure Container Service (ACS)](h
 ### [Final Project Report](https://github.com/Azure/MachineLearningSamples-TDSPUCIAdultIncome/blob/master/docs/deliverable_docs/ProjectReport.md)
 Details about each of the above sections are provided in the compiled final project report [ProjectReport](https://github.com/Azure/MachineLearningSamples-TDSPUCIAdultIncome/blob/master/docs/deliverable_docs/ProjectReport.md). The project report also contains further details about the use case, model performance metrics, deployment, and infrastructure on which the project was developed and deployed.
 
+The project report, together with the contents of the entire project folder, and version control repository may be delivered to the client.
 
 ## Conclusion
 
 In this sample, we showed now to use TDSP structure and templates in Azure Machine Learning. Through the document and artifact templates you can:
 1. Properly define purpose and scope of a project
-2. Structure and execute projects according to the TDSP lifecycle stages
-3. Develop standardized reports using TDSP data science utilities (such as the IDEAR data exploration and visualization report).
-4. Prepare a final data science project report that can be delivered to a client. 
+2. Create a project team with distributed roles and responsibilities
+3. Structure and execute projects according to the TDSP lifecycle stages
+4. Develop standardized reports using TDSP data science utilities (such as the IDEAR data exploration and visualization report).
+5. Prepare a final data science project report that can be delivered to a client
 
 We hope you use this feature of Azure Machine Learning to facilitate with standardization and collaboration within your data science teams.
 

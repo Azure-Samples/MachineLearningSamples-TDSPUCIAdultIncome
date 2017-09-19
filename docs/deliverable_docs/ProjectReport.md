@@ -15,7 +15,7 @@ The purpose of this sample is to show how to instantiate and execute a projet us
 
 The dataset for this project is from the UCI ML Repository [[link]](https://archive.ics.uci.edu/ml/datasets/adult). It is taken from the 1994 US Census database and contains census and income information for about 50,000 individuals. Based on census features, the machine learning task is to predict if the income of an individual is above $50,000 or not (binary classification).
 
-Further information about the dataset is downloaded and saved [here](.\Docs\CustomerDocs\UCI_Adult_Income_Data_Information.txt). 
+Further information about the dataset is downloaded and saved [here](https://github.com/Azure/MachineLearningSamples-TDSPUCIAdultIncome/blob/master/docs/customer_docs/UCI_Adult_Income_Data_Information.txt). 
 
 ### Scope
  * The scope of this sample is to create a binary classification machine learning model which address the above rediction problem. 
@@ -23,10 +23,10 @@ Further information about the dataset is downloaded and saved [here](.\Docs\Cust
  * We operationalize the solution in Azure Container Services for batch and single-mode scoring.
 
 ## Plan
-We follow the stages fo the TDSP lifecycle, and organize documentation and code according to the stages of the lifecycle. Documentation about the work and findings in each of the lifecycle stages is included below. The code is organized into folders that follow the lifecycle stages. Documentation about the code and its execution is 
+We follow the stages fo the TDSP lifecycle, and organize documentation and code according to the stages of the lifecycle. Documentation about the work and findings in each of the lifecycle stages is included below. The code is organized into folders that follow the lifecycle stages. Documentation about the code and its execution is provided in .\code folder and subfolders.
 
-### Personnel
-The project is executed by one data scientist and a data engineer. Data engineer serves at the project lead, with appropriate credentials to create necessary Azure resources and Visual Studio Online (VSO) Git repositories.
+### Team Personnel
+The project is executed by one **data scientist** and a **technical program manager**. The technical program manager serves at the project lead, with appropriate credentials to provision necessary Azure resources for development and deployment, and Git server for version control. Data scientist executes the various data science steps, creates and compares models, and deployes the final model using Azure Machine Learning.
 
 * NOTE: In a customer project additional personnel, from both from a data science team as well as the client organization, may be involved (as outlined in the TDSP documentation [[link]](https://github.com/Azure/Microsoft-TDSP/blob/master/Docs/roles-tasks.md))
 
@@ -109,7 +109,10 @@ We used the TDSP template in Azure Machine Learning to create a new project, and
 
 Code is executed in the AMLW Python 3.5 environment using the Azure Machine Learning CLI. See Azure Machine Learning product documentation for information on installation and execution. Details about code and its execution are provided in the respective folders and subfolders under \Code.
 
-Outputs generated from data preparation and modeling stages are stored in: C:\\TempAMLWorkbench\\TDSPUCIAdultIncome folder. 
+Outputs generated from data preparation and modeling stages are stored in the root .\output folder. 
+
+## Version Control Repository
+An empty Git repository is needed to version control contents of this project. 
 
 #### Deployment
 For deployment, we copied the following files in the project root directory:
