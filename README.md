@@ -136,7 +136,7 @@ We  deployed a web-service on a cluster in the [Azure Container Service (ACS)](h
 Details about each of the above sections are provided in the compiled final project report [ProjectReport](https://github.com/Azure/MachineLearningSamples-TDSPUCIAdultIncome/blob/master/docs/deliverable_docs/ProjectReport.md). The project report also contains further details about the use case, model performance metrics, deployment, and infrastructure on which the project was developed and deployed.
 
 
-## Conclusion & Next Steps
+## Conclusion
 
 In this sample, we showed now to use TDSP structure and templates in Azure Machine Learning. Through the document and artifact templates you can:
 1. Properly define purpose and scope of a project
@@ -144,7 +144,7 @@ In this sample, we showed now to use TDSP structure and templates in Azure Machi
 3. Develop standardized reports using TDSP data science utilities (such as the IDEAR data exploration and visualization report).
 4. Prepare a final data science project report that can be delivered to a client. 
 
-We hope you use this feature of Azure Machine Learning to facilitate with project structure standardization and collaboration within your data science teams.
+We hope you use this feature of Azure Machine Learning to facilitate with standardization and collaboration within your data science teams.
 
 ## Next Steps: See References Below to Get Started
 
