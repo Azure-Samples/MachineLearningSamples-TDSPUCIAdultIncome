@@ -15,7 +15,7 @@ The purpose of this sample is to show how to instantiate and execute a projet us
 
 The dataset for this project is from the UCI ML Repository [[link]](https://archive.ics.uci.edu/ml/datasets/adult). It is taken from the 1994 US Census database and contains census and income information for about 50,000 individuals. Based on census features, the machine learning task is to predict if the income of an individual is above $50,000 or not (binary classification).
 
-Further information about the dataset is downloaded and saved [here](.\Docs\CustomerDocs\UCI_Adult_Income_Data_Information.txt). 
+Further information about the dataset is downloaded and saved [here](https://github.com/Azure/MachineLearningSamples-TDSPUCIAdultIncome/blob/master/docs/customer_docs/UCI_Adult_Income_Data_Information.txt). 
 
 ### Scope
  * The scope of this sample is to create a binary classification machine learning model which address the above rediction problem. 
@@ -23,10 +23,10 @@ Further information about the dataset is downloaded and saved [here](.\Docs\Cust
  * We operationalize the solution in Azure Container Services for batch and single-mode scoring.
 
 ## Plan
-We follow the stages fo the TDSP lifecycle, and organize documentation and code according to the stages of the lifecycle. Documentation about the work and findings in each of the lifecycle stages is included below. The code is organized into folders that follow the lifecycle stages. Documentation about the code and its execution is 
+We follow the stages fo the TDSP lifecycle, and organize documentation and code according to the stages of the lifecycle. Documentation about the work and findings in each of the lifecycle stages is included below. The code is organized into folders that follow the lifecycle stages. Documentation about the code and its execution is provided in .\code folder and subfolders.
 
-### Personnel
-The project is executed by one data scientist and a data engineer. Data engineer serves at the project lead, with appropriate credentials to create necessary Azure resources and Visual Studio Online (VSO) Git repositories.
+### Team Personnel
+The project is executed by one **data scientist** and a **technical program manager**. The technical program manager serves at the project lead, with appropriate credentials to provision necessary Azure resources for development and deployment, and Git server for version control. Data scientist executes the various data science steps, creates and compares models, and deployes the final model using Azure Machine Learning.
 
 * NOTE: In a customer project additional personnel, from both from a data science team as well as the client organization, may be involved (as outlined in the TDSP documentation [[link]](https://github.com/Azure/Microsoft-TDSP/blob/master/Docs/roles-tasks.md))
 
@@ -84,7 +84,7 @@ Training and test data sets were pickled and saved as .pkl files for input into 
 We created two models with 3-fold cross-validation: Elastic net and Random forest. We used [59-point sampling](http://www.jmlr.org/papers/volume13/bergstra12a/bergstra12a.pdf) for random grid search as a strategy for cross-validation. 
 
 ### Model evaluation
-Accuracy of the models were measured using AUC on the test data set. AUC of both Elastic net and Random forest models were > 0.85. We save both models in pickled.pkl files, and output the ROC plots for both models. In addition, feature importances for the Random forest model are output in a .csv file and plotted in a pdf (top predictive features only).
+Accuracy of the models were measured using AUC on the test data set. AUC of both Elastic Net and Random Forest models were > 0.85. We save both models in pickled.pkl files, and output the ROC plots for both models. AUC of Random Forest model was 0.92 and that of the Elastic Net model was 0.90. In addition, for model interpretation, feature importance for the Random Forest model are output in a .csv file and plotted in a pdf (top 20 predictive features only). 
 
 ROC curve of **Random Forest model (Left)** on test data is shown below. This was the model that was deployed:
 
@@ -95,11 +95,13 @@ Importance of features from the Random Forest model is shown below:
 <img src="./images/featImportance.png" width="800" height="450">
 
 
+
 ## 4. [**Deployment**](https://github.com/Azure/MachineLearningSamples-TDSPUCIAdultIncome/tree/master/code/03_deployment)
-AUC of both Elastic net and Random forest models were > 0.85. Therefore, per criteria for the threshold for minimum accuracy required for deployment, both models are suitable for deployment. Deployment is performed using Azure Container Services using Azure Machine Learning command-line utilities (CLI).
+We deployed the Random Forest Model. Deployment is performed using Azure Container Services using Azure Machine Learning command-line utilities (CLI).
 
 
-## Architecture & Environments
+## Architecture, Environments, Code Execution
+
 #### Development
 An [Azure Data Science Virtual Machine (DSVM) Windows Server 2016](https://azuremarketplace.microsoft.com/marketplace/apps/microsoft-ads.windows-data-science-vm), (VM Size: [DS3_V2](https://docs.microsoft.com/azure/virtual-machines/windows/sizes), with 4 virtual CPUs and 14-Gb RAM). Although tested on an Azure DSVM.
 
@@ -107,7 +109,10 @@ We used the TDSP template in Azure Machine Learning to create a new project, and
 
 Code is executed in the AMLW Python 3.5 environment using the Azure Machine Learning CLI. See Azure Machine Learning product documentation for information on installation and execution. Details about code and its execution are provided in the respective folders and subfolders under \Code.
 
-Outputs generated from data preparation and modeling stages are stored in: C:\\TempAMLWorkbench\\TDSPUCIAdultIncome folder. 
+Outputs generated from data preparation and modeling stages are stored in the root .\output folder. 
+
+## Version Control Repository
+An empty Git repository is needed to version control contents of this project. 
 
 #### Deployment
 For deployment, we copied the following files in the project root directory:
@@ -116,6 +121,15 @@ For deployment, we copied the following files in the project root directory:
 3. The scoring script, score.py, from the .\code\deployment folder
 
 Service is run in the Azure Container Service (ACS). The operationalization environment provisions Docker and Kubernetes in the cluster to manage the web service deployment.
+
+#### Code Execution
+In this example, we execute code in **local compute environment** only. Refer to Azure Machine Learning documents for execution details and further options.
+
+Executing a Python script in a local Python runtime is easy:
+
+    az ml experiment submit -c local my_script.py
+
+IPython notebook files can be double-clicked from the project structure on the left of the Azure Machine Learning UI and run in the Jypyter Notebook Server.
 
 
 [comment]: # (If there is a substantial change in the customer's business workflow, make a before/after diagram showing the data flow.)

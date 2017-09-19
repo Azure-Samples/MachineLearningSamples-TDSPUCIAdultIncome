@@ -32,7 +32,7 @@ We had previously released a [GitHub repository for the TDSP project structure a
 
 ### Purpose & Scope
 ### Purpose
-The primary purpose of this sample is to show how to instantiate and execute a machine learning project using the [Team Data Science Process (TDSP)](https://github.com/Azure/Microsoft-TDSP) structure and templates in Azure Machine Learning. For this purpose, we use the well-known [1994 US Census data from the UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/adult). The modeling task is to predict US annual income classes from US Census information (for example, age, race, education level, country of origin, etc.)
+The purpose of this sample is to show how to instantiate and execute a machine learning project using the [Team Data Science Process (TDSP)](https://github.com/Azure/Microsoft-TDSP) structure and templates in Azure Machine Learning. For this purpose, we use the well-known [1994 US Census data from the UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/adult). The modeling task is to predict US annual income classes from US Census information (for example, age, race, education level, country of origin, etc.)
 
 ### Scope
 
@@ -55,6 +55,9 @@ The primary purpose of this sample is to show how to instantiate and execute a m
 4. Make sure that you have properly installed Azure Machine Learning by the [quick start installation guide](./quick-start-installation.md).
 
 The dataset for this sample is from the UCI ML Repository [[link]](https://archive.ics.uci.edu/ml/datasets/adult). It is taken from the 1994 US Census database and contains census and income information for about 50,000 individuals. This is structured dataset having numerical and categorical features, and a categorical target consisting of two income categories ('>50 K' or '<=50 K'). 
+
+### Optional: Version Control Repository
+If you would like to save and version your project and its contents, you need to have a version control repository where this can be done. You can enter the Git repository location while creating the new project using the TDSP template in Azure Machine Learning.
 
 ### Informational: About Azure Machine Learning
 * [FAQ - How to get started](faq.md)
@@ -81,7 +84,7 @@ This data was extracted from the Census Bureau database found at: https://www.ce
 * **FEATURES**: Age, work class, education level, education level, race, sex, hours of work per week, etc.
 
 
-## Project Structure And Reporting
+## Project Structure, Execution And Reporting
 
 ### Structure
 For this project, we use the TDSP folder structure and documentation templates (below), which follows the [TDSP lifecycle](https://github.com/Azure/Microsoft-TDSP/blob/master/Docs/lifecycle-detail.md). 
@@ -91,8 +94,16 @@ Project is created based on instructions provided [here](https://aka.ms/how-to-u
 
 <img src="./docs/images/instantiation-4.png" width="900" height="700">
 
+### Execution
+In this example, we execute code in **local compute environment** only. Refer to Azure Machine Learning documents for execution details and further options.
 
-The step-by-step data science workflow was as follows:
+Executing a Python script in a local Python runtime is easy:
+
+    az ml experiment submit -c local my_script.py
+
+IPython notebook files can be double-clicked from the project structure on the left of the Azure Machine Learning UI and run in the Jypyter Notebook Server.
+
+The sequential data science workflow was as follows:
 
 * [**Data Acquisition and Understanding**](https://github.com/Azure/MachineLearningSamples-TDSPUCIAdultIncome/tree/master/code/01_data_acquisition_and_understanding)
 
@@ -127,12 +138,22 @@ We  deployed a web-service on a cluster in the [Azure Container Service (ACS)](h
 ### [Final Project Report](https://github.com/Azure/MachineLearningSamples-TDSPUCIAdultIncome/blob/master/docs/deliverable_docs/ProjectReport.md)
 Details about each of the above sections are provided in the compiled final project report [ProjectReport](https://github.com/Azure/MachineLearningSamples-TDSPUCIAdultIncome/blob/master/docs/deliverable_docs/ProjectReport.md). The project report also contains further details about the use case, model performance metrics, deployment, and infrastructure on which the project was developed and deployed.
 
+The project report, together with the contents of the entire project folder, and version control repository may be delivered to the client.
 
-## Conclusion & Next Steps
+## Conclusion
 
-In this sample, we showed now to use TDSP structure and templates in Azure Machine Learning. We hope you use this feature of Azure Machine Learning to facilitate with project structure standardization and collaboration within your data science teams.
+In this sample, we showed now to use TDSP structure and templates in Azure Machine Learning. Through the document and artifact templates you can:
+1. Properly define purpose and scope of a project
+2. Create a project team with distributed roles and responsibilities
+3. Structure and execute projects according to the TDSP lifecycle stages
+4. Develop standardized reports using TDSP data science utilities (such as the IDEAR data exploration and visualization report).
+5. Prepare a final data science project report that can be delivered to a client
 
-## References
+We hope you use this feature of Azure Machine Learning to facilitate with standardization and collaboration within your data science teams.
+
+## Next Steps: See References Below to Get Started
+
+[How to use Team Data Science Process (TDSP) in Azure Machine Learning](https://aka.ms/how-to-use-tdsp-in-aml)
 
 [Team Data Science Process (TDSP)](https://github.com/Azure/Microsoft-TDSP)
 
