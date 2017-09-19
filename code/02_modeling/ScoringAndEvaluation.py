@@ -11,17 +11,15 @@ def Get_Class_Probabilities (TransformedTestDatPklFile, modelPkllFile):
     from sklearn.externals import joblib
 
     # Transform test file, use training file as reference to fit transformation
-    inFile = open(TransformedTestDatPklFile, 'rb')
-    testDataFrame = pickle.load(inFile)
-    inFile.close()
+    with open(TransformedTestDatPklFile, 'rb') as f:
+        testDataFrame = pickle.load(f)
 
     testDataFrame["income"].values
     X_test = testDataFrame.drop("income", axis=1)
 
     # Open Model File
-    inFile = open(modelPkllFile, 'rb')
-    Model = joblib.load(inFile) 
-    inFile.close()
+    with open(modelPkllFile, 'rb') as f:
+        Model = joblib.load(f) 
     
     # Predict probabilities
     y_pred = Model.predict_proba(X_test)[:, 1];
