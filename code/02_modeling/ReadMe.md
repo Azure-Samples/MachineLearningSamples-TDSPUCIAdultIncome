@@ -15,7 +15,7 @@ We provide a description of each of the files and their function.
     How it gets used: From Azure Maching Learning Command Line
     >az ml experiment submit -c local Main_FeatureEngineering.py
 
-### Main_FeatureEngineering.ipnb
+### Main_FeatureEngineering.ipynb
     Purpose: generate features from data and serialize the feature columns to output folder
     Language: Python
     How it gets used: This is an IPython notebook file. Double-click, start Jupyter NB Server, then execute the file cell-by-cell or run all cells from 'Run' menu
@@ -41,7 +41,7 @@ We provide a description of each of the files and their function.
     How it gets used: From Azure Maching Learning Command Line
     >az ml experiment submit -c local Main_ScoringAndEvaluation.py
 
-### Main_ScoringAndEvaluation.py
+### Main_ScoringAndEvaluation.ipynb
     Purpose: evalute model and output the evaluation metrics
     Language: Python 3
     How it gets used: This is an IPython notebook file. Double-click, start Jupyter NB Server, then execute the file cell-by-cell or run all cells from 'Run' menu
