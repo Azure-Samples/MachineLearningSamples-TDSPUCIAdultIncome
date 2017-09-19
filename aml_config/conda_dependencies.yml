@@ -16,17 +16,25 @@ dependencies:
   # The python interpreter version.
   # Currently Azure ML Workbench only supports 3.5.2.
   - python=3.5.2
+  - ipywidgets==5.2.2
+  - seaborn
+  - statsmodels
+  - scikit-learn
+  - requests
+  - pandas
+  - matplotlib
+  - io
+  - os
+  - json
+  - pickle
 
   # Required for Jupyter Notebooks.
   - ipykernel=4.6.1
-
+  
   - pip:
     # The API for Azure Machine Learning Model Management Service.
     # Details: https://github.com/Azure/Machine-Learning-Operationalization
     - azure-ml-api-sdk==0.1.0a9
-    - ipywidgets==5.2.2
-    - seaborn
-    - statsmodels
 
     # Helper utilities for dealing with Azure ML Workbench Assets.
     - https://azuremldownloads.blob.core.windows.net/wheels/latest/azureml.assets-1.0.0-py3-none-any.whl?sv=2016-05-31&si=ro-2017&sr=c&sig=xnUdTm0B%2F%2FfknhTaRInBXyu2QTTt8wA3OsXwGVgU%2BJk%3D
