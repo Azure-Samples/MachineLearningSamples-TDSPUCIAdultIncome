@@ -17,13 +17,12 @@ from matplotlib.backends.backend_pdf import PdfPages
 #####################################################################################################
 # MAKE OUTPUR DIRECTORY OUTSIDE OF THE GIT REPO ON LOCAL DRIVE
 #####################################################################################################
-dirpath = '.\\outputs'
-pathlib.Path(dirpath).mkdir(parents=True, exist_ok=True) 
-
+dirpath =  os.environ['AZUREML_NATIVE_SHARE_DIRECTORY']
+os.makedirs('./outputs', exist_ok=True)
 #####################################################################################################
 # LOAD TRAIN AND TEST DATA FILES
 #####################################################################################################
-train_engineered_file = dirpath + "\\train_data_engineered.pkl"
+train_engineered_file = dirpath + "train_data_engineered.pkl"
 inFile = open(train_engineered_file, 'rb')
 train_df = pickle.load(inFile)
 inFile.close()
@@ -92,6 +91,10 @@ inFile = open(model_file, 'wb')
 joblib.dump(CVRFModel, inFile) 
 inFile.close()
 
+model_file_output = '.\\outputs\\CVRandomForestModel.pkl'
+inFile = open(model_file_output, 'wb')
+joblib.dump(CVRFModel, inFile) 
+inFile.close()
 
 
 #####################################################################################################
@@ -130,6 +133,10 @@ CVModelEnet = random_search.fit(X_train, y_train);
 ########### PERSIST MODEL
 model_file = dirpath + '\\CVElasticNetModel.pkl'
 inFile = open(model_file, 'wb')
+joblib.dump(CVModelEnet, inFile) 
+
+model_file_output = '.\\outputs\\CVElasticNetModel.pkl'
+inFile = open(model_file_output, 'wb')
 joblib.dump(CVModelEnet, inFile) 
 
 #####################################################################################################
