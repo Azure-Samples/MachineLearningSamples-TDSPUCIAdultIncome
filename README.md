@@ -20,9 +20,6 @@ ms.author: bradsev
 
 # Income classification ith Team Data Science Process project
 
-## [Link To GitHub repository](https://github.com/Azure/MachineLearningSamples-TDSPUCIAdultIncome)
-We provide summary documentation here about the sample. More extensive documentation can be found on the GitHub site.
-
 ## Introduction
 
 Standardization of the structure and documentation of data science projects, that is anchored to an established [data science lifecycle](https://github.com/Azure/Microsoft-TDSP/blob/master/Docs/lifecycle-detail.md), is key to facilitating effective collaboration in data science teams. Creating Azure Machine Learning projects with the [Team Data Science Process (TDSP)](https://github.com/Azure/Microsoft-TDSP) template provides a framework for such standardization.
