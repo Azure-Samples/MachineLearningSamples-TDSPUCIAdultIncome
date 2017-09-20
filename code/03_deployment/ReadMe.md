@@ -11,7 +11,7 @@ We provide information about each of the files used for deployment.
 
 
 ## service_schema.json
-    Purpose: 
+    Purpose: specify web service input data format
     Language: Python
     How it gets used: used in deploymnet
 
