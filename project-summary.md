@@ -18,7 +18,7 @@ ms.author: bradsev
 
 ---
 
-# Income classification ith Team Data Science Process project
+# Income classification with Team Data Science Process project
 
 <img src="./docs/images/aml-us-income-tdsp-icon.png" width="180" height="120">
 
