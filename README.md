@@ -22,6 +22,9 @@ ms.author: bradsev
 
 <img src="./docs/images/aml-us-income-tdsp-icon.png" width="180" height="120">
 
+## Summary
+How to use the Team Data Science Process template to create a project in Azure Machine Learning that classifies US incomes.
+
 ## Introduction
 
 Standardization of the structure and documentation of data science projects, that is anchored to an established [data science lifecycle](https://github.com/Azure/Microsoft-TDSP/blob/master/Docs/lifecycle-detail.md), is key to facilitating effective collaboration in data science teams. Creating Azure Machine Learning projects with the [Team Data Science Process (TDSP)](https://github.com/Azure/Microsoft-TDSP) template provides a framework for such standardization.
