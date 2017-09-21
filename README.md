@@ -15,7 +15,7 @@ The public GitHub repository for this real world scenario contains all the code 
 
 ## Overview
 
-Here we provide an example of how an actual machine learning project can be created using TDSP structure, populated with project-specific code, artifacts and documents, and executed within the Azure Machine Learning.
+How to use the Team Data Science Process template to create a project in Azure Machine Learning that classifies US incomes.
 
 For an actual project, the primary Readme.md in the repository would contain an executive summary of the project. In this case, that is located in Microsoft [documentation site](https://review.docs.microsoft.com/en-us/azure/machine-learning/preview/scenario-tdsp-classifying-us-incomes.md). It is also available in [project-summary.md](project-summary.md).
 
