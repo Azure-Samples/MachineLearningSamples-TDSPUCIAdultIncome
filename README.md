@@ -4,7 +4,7 @@
 
 The detailed documentation for this real world scenario is below:
 
-[https://review.docs.microsoft.com/en-us/azure/machine-learning/preview/scenario-tdsp-classifying-us-incomes](https://review.docs.microsoft.com/en-us/azure/machine-learning/preview/scenario-tdsp-classifying-us-incomes.md)
+[https://docs.microsoft.com/azure/machine-learning/preview/scenario-tdsp-classifying-us-incomes](https://review.docs.microsoft.com/en-us/azure/machine-learning/preview/scenario-tdsp-classifying-us-incomes.md)
 
 ## Link to the Gallery GitHub repository
 
