@@ -1,7 +1,5 @@
 # Income classification with Team Data Science Process project
 
-<img src="./docs/images/aml-us-income-tdsp-icon.png" width="180" height="120">
-
 ## Link to the Microsoft DOCS site
 
 The detailed documentation for this real world scenario is below:
