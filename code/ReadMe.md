@@ -2,7 +2,7 @@
 
 This directory contains all the source code for the project. There are three subdirectories, adhering to the stages of the TDSP lifecycle.
 
-The code sections are organized below in sequential order in which they are to be run.
+The code sections are organized below in sequential order in which they are to be run. Before running code, do setup.
 
 ## Configuration setup before running code
 We connect execution environment to Azure account. Open command line window (CLI) by clicking File menu in the top left corner of AML Workbench and choosing "Open Command Prompt." Then run in CLI
