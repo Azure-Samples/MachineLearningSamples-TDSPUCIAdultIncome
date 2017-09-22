@@ -39,3 +39,13 @@ We provide information about each of the files used for deployment.
     4. Set up operationalization environment
     5. Run the following command from project root to deploy 
     >az ml service create realtime -f Score.py --model-file CVRandomForestModel.pkl -s service_schema.json -n <app_name> -r python
+
+## How to call the service
+
+When the web service is successfully deployed, you can call it using the CLI or by calling the scoring endpoint.
+
+    az ml service run realtime -n <service name> [-d "\"YOUR DATA HERE\""]
+    
+For example: 
+
+    az ml service run realtime -i <service name> -d  "{\"input_df\": [{\"capital_loss\":-0.219095674,\"capital_gain\":-0.1480462751,\"age\":-1.0194714395,\"education_num\":-1.2501403485,\"hours_per_week\":-0.0780732255,\"Federal-gov\":0.0,\"Local-gov\":0.0,\"Private\":1.0,\"Self-emp-inc\":0.0,\"Self-emp-not-inc\":0.0,\"State-gov\":0.0,\"Without-pay\":0.0,\"Divorced\":0.0,\"Married-AF-spouse\":0.0,\"Married-civ-spouse\":0.0,\"Married-spouse-absent\":0.0,\"Never-married\":1.0,\"Separated\":0.0,\"Widowed\":0.0,\"Adm-clerical\":0.0,\"Armed-Forces\":0.0,\"Craft-repair\":0.0,\"Exec-managerial\":0.0,\"Farming-fishing\":0.0,\"Handlers-cleaners\":0.0,\"Machine-op-inspct\":1.0,\"Other-service\":0.0,\"Priv-house-serv\":0.0,\"Prof-specialty\":0.0,\"Protective-serv\":0.0,\"Sales\":0.0,\"Tech-support\":0.0,\"Transport-moving\":0.0,\"Husband\":0.0,\"Not-in-family\":0.0,\"Other-relative\":0.0,\"Own-child\":1.0,\"Unmarried\":0.0,\"Wife\":0.0,\"Amer-Indian-Eskimo\":0.0,\"Asian-Pac-Islander\":0.0,\"Black\":1.0,\"Other\":0.0,\"White\":0.0,\"Female\":0.0,\"Male\":1.0,\"Canada\":0.0,\"El-Salvador\":0.0,\"Germany\":0.0,\"Mexico\":0.0,\"Philippines\":0.0,\"Puerto-Rico\":0.0,\"United-States\":1.0}]}"
