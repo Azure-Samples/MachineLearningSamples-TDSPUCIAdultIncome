@@ -15,14 +15,14 @@ For further information on data feature and defnintion, you can read this docume
 ### DataPreparation.py:
     Purpose: download and prepare data
     Language: Python
-    How it gets used: Used in code\01\_data\_acquisition\_and_understanding\Main.py
+    How it gets used: Used in code\01_data_acquisition_and_understanding\Main.py
     downloaddata: download training and test data from the web to local
 
 ### Main.py:
     Purpose: call function in DataPreparation.py to download data
     Language: Python
     How it is used: From Azure Machine Learning command line
-    >az ml experiment submit -c local code\01\_data\_acquisition\_and_understanding\Main.py
+    >az ml experiment submit -c local code\01_data_acquisition_and_understanding\Main.py
 
 ### IDEAR:
 For generating standardized data exploration report, we use the [IDEAR utility in Python 3](https://github.com/Azure/Azure-TDSP-Utilities/tree/master/DataScienceUtilities/DataReport-Utils/Python). This is an INTERACTIVE Jupyter notebook, where you can explore your data, do plotting of features and target, examind their distribution, clustering and then finally select a set of data summaries and pictures to output to a standardized report.
