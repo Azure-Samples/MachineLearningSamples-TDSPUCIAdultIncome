@@ -5,6 +5,16 @@ For deployment in Azure Container Services, you will first have to generate a JS
 2. Model (.pkl file)
 3. Score.py Python script
 
+## Operationalization environment setup
+Create the environment (you need to do this once per environment e.g. dev or prod)
+    az ml env setup -c -n <yourclustername> --location <e.g. eastus2>
+Create a Model Management account (one time setup)
+    az ml account modelmanagement create --location <e.g. eastus2> -n <your-new-acctname> -g <yourresourcegroupname>
+Set the Model Management account
+    az ml account modelmanagement set -n <youracctname> -g <yourresourcegroupname>
+Set the environment. The cluster name is the name used in step 1 above. The resource group name was the output of the same process and would be in the command window when the setup process is completed.
+    az ml env set -n <yourclustername> -g <yourresourcegroupname>
+
 We provide information about each of the files used for deployment. 
 
 ## Score.py
