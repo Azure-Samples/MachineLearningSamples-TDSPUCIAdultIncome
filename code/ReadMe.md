@@ -2,7 +2,27 @@
 
 This directory contains all the source code for the project. There are three subdirectories, adhering to the stages of the TDSP lifecycle.
 
-The code sections are organized below in sequential order in which they are to be run.
+The code sections are organized below in sequential order in which they are to be run. Before running code, do setup.
+
+## Configuration setup before running code
+We connect execution environment to Azure account. Open command line window (CLI) by clicking File menu in the top left corner of AML Workbench and choosing "Open Command Prompt." Then run in CLI
+
+    az login
+
+You get a message
+
+    To sign in, use a web browser to open the page https://aka.ms/devicelogin and enter the code <code> to authenticate.
+
+Go to this web page, enter the code and sign into your Azure account. After this step, run in CLI
+
+    az account list -o table
+
+and find the subscription ID of Azure subscription that has your AML Workbench Workspace account. Finally, run in CLI
+
+    az account set -s <subscription ID>
+
+to complete the connection to your Azure subscription.
+
 
 
 ## /code/01\_data\_acquisition\_and\_understanding

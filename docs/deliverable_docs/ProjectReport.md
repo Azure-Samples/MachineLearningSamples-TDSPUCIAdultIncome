@@ -111,6 +111,10 @@ Code is executed in the AMLW Python 3.5 environment using the Azure Machine Lear
 
 Outputs generated from data preparation and modeling stages are stored in the root .\output folder. 
 
+The deployment progress can be tracked with kubernetes from localhost:
+
+<img src="./images/kubernetes.png">
+
 ## Version Control Repository
 An empty Git repository is needed to version control contents of this project. 
 

@@ -18,7 +18,7 @@ ms.author: bradsev
 
 ---
 
-# Income classification ith Team Data Science Process project
+# Income classification with Team Data Science Process project
 
 <img src="./docs/images/aml-us-income-tdsp-icon.png" width="180" height="120">
 
@@ -75,10 +75,16 @@ Create a new project using this example as a template:
 1.	Open Azure Machine Learning Workbench
 2.	On the **Projects** page, click the **+** sign and select **New Project**
 3.	In the **Create New Project** pane, fill in the information for your new project
-4.	In the **Search Project Templates** search box, type "Classify US incomes - TDSP project" and select the template
+4.	In the **Search Project Templates** search box, type "US Income Class Prediction" and select the template
 5.	Click **Create**
 
 If you provide an empty Git repository location during creating the project (in the appropriate box), then that repository will be populated with the project structure and contents after creation of the project.
+
+## Step-by-step execution overview
+1. Once the project is created, sample scripts and documents will be automatically loaded and organized in TDSP format in your project.
+3. Execute the project from end to end by running Python scripts/Jupyter Notebook in each folder sequentially (01_data_acquisition_and_understanding, 02_modeling, 03_deployment)
+4. Follow the Readme file in each folder to submit your experiments(scripts) in command line or using Jupyter notebooks and move output if needed.
+
 
 ## Use case overview
 The problem is to understand how socio-economic data captured in US Census can help predict annual income of individuals in US. Based on such Census features, the machine learning task is to predict if the income of an individual is above $50,000 or not (binary classification task).

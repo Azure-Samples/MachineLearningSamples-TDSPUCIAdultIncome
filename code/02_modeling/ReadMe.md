@@ -13,7 +13,7 @@ We provide a description of each of the files and their function.
     Purpose: generate features from data and serialize the feature columns to output folder
     Language: Python
     How it gets used: From Azure Maching Learning Command Line
-    >az ml experiment submit -c local Main_FeatureEngineering.py
+    >az ml experiment submit -c local code\02_modeling\Main_FeatureEngineering.py
 
 ### Main_FeatureEngineering.ipynb
     Purpose: generate features from data and serialize the feature columns to output folder
@@ -26,7 +26,7 @@ We provide a description of each of the files and their function.
     Purpose: train models based on given target and features and saves model to output folder
     Language: Python 3
     How it gets used: From Azure Maching Learning Command Line
-    >az ml experiment submit -c local Main_ModelCreation.py
+    >az ml experiment submit -c local code\02_modeling\Main_ModelCreation.py
 
 ## 3. Model evaluation
 ### ScoringAndEvaluation.py
@@ -39,7 +39,7 @@ We provide a description of each of the files and their function.
     Purpose: evalute model and output the evaluation metrics
     Language: Python 3
     How it gets used: From Azure Maching Learning Command Line
-    >az ml experiment submit -c local Main_ScoringAndEvaluation.py
+    >az ml experiment submit -c local code\02_modeling\Main_ScoringAndEvaluation.py
 
 ### Main_ScoringAndEvaluation.ipynb
     Purpose: evalute model and output the evaluation metrics
