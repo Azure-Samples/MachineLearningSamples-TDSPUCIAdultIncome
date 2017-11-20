@@ -180,3 +180,5 @@ See references below to get started:
 [TDSP project template for Azure Machine Learning](https://aka.ms/tdspamlgithubrepo)
 
 [US Income data-set from UCI ML repository](https://archive.ics.uci.edu/ml/datasets/adult)
+## Data/Telemetry ##
+UCI Income classification project collects usage data and sends it to Microsoft to help improve our products and services. Read our [privacy statement](http://go.microsoft.com/fwlink/?LinkId=521839) to learn more.

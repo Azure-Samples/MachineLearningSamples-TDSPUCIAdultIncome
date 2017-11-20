@@ -3,6 +3,7 @@
 #####################################################################################################
 import pickle
 from FeatureEngineering import filter_and_transform_TrainData_Features, filter_and_transform_TestData_Features
+from azureml.logging import get_azureml_logger
 
 ###########################################################################################
 ## FILTER AND TRANSFORM FEATURES
@@ -26,4 +27,5 @@ if __name__ == '__main__':
     outFile = open(test_engineered_file, 'wb')
     pickle.dump(testDataFrame, outFile)
     outFile.close()
-
+    logger = get_azureml_logger()
+    logger.log("amlrealworld.uciincome.featureengineering", "true")

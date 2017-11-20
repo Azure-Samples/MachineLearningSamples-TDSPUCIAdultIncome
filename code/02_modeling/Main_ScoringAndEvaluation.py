@@ -5,6 +5,7 @@ import numpy as np
 import pandas
 import pickle
 from ScoringAndEvaluation import Get_Class_Probabilities, Evaluate_Predictions
+from azureml.logging import get_azureml_logger
 
 #####################################################################################################
 # SET FILE LOCATION, LOCATION TO TEST DATA AND MODEL FILE
@@ -46,3 +47,5 @@ if __name__ == '__main__':
     y_pred = Get_Class_Probabilities(transformed_test_file, ElasticNet_model_file);
     EnetAuc = Evaluate_Predictions(y_pred, y_test, ElasticNetROCplotpath)
     print ("ElasticNet AUC: " + str(round(EnetAuc, 3)))
+    logger = get_azureml_logger()
+    logger.log("amlrealworld.uciincome.modelevaluation", "true")
