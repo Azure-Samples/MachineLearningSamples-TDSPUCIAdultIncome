@@ -1,6 +1,7 @@
 from azureml.api.schema.dataTypes import DataTypes
 from azureml.api.schema.sampleDefinition import SampleDefinition
 from azureml.api.realtime.services import generate_schema
+from azureml.logging import get_azureml_logger
 import pandas
 import pickle
 
@@ -36,3 +37,5 @@ if __name__ == '__main__':
     # The prepare statement writes the scoring file (main.py) and
     # the schema file (service_schema.json) the the output folder.
     generate_schema(run_func=run, inputs=inputs, filepath = 'service_schema.json')
+    logger = get_azureml_logger()
+    logger.log("amlrealworld.uciincome.score", "true")

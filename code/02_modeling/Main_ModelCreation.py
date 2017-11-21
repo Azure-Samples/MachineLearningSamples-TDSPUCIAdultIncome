@@ -13,7 +13,7 @@ from scipy import stats;
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.externals import joblib
 from matplotlib.backends.backend_pdf import PdfPages
-
+from azureml.logging import get_azureml_logger
 #####################################################################################################
 # MAKE OUTPUR DIRECTORY OUTSIDE OF THE GIT REPO ON LOCAL DRIVE
 #####################################################################################################
@@ -141,3 +141,5 @@ joblib.dump(CVModelEnet, inFile)
 
 #####################################################################################################
 #####################################################################################################
+logger = get_azureml_logger()
+logger.log("amlrealworld.uciincome.modelcreation", "true")
