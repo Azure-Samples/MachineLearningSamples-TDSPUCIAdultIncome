@@ -6,8 +6,6 @@ import numpy as np
 import pandas
 import pathlib
 import pickle
-import matplotlib.pyplot as plt; import matplotlib.mlab as mlab;
-#from sklearn import ensemble, linear_model, grid_search, cross_validation, preprocessing, metrics, datasets, feature_extraction;
 from sklearn import ensemble, linear_model, model_selection, preprocessing, metrics, datasets, feature_extraction;
 from scipy import stats;
 from sklearn.ensemble import RandomForestClassifier
@@ -77,21 +75,26 @@ df = pandas.DataFrame({
     'FeatureImportances' : top_importances
 })
 
-plotpath = dirpath + '\\RandomForestFeatureImportancePlots.pdf'
-df.plot(kind='bar', title="Random Forest Feature Importance"); 
-plt.axhline(0, color='k'); 
-plt.savefig(plotpath)
+try:
+    import matplotlib.pyplot as plt
+    import matplotlib.mlab as mlab
+    plotpath = dirpath + 'RandomForestFeatureImportancePlots.pdf'
+    df.plot(kind='bar', title="Random Forest Feature Importance"); 
+    plt.axhline(0, color='k'); 
+    plt.savefig(plotpath)
+except ImportError:
+    print("Warning: library (matplotlib or sklearn) missing. Can't plot. Please install matplotlib")
 
-featureImportanceOutputRF = dirpath + '\\featureImportanceOutputRF.csv'
+featureImportanceOutputRF = dirpath + 'featureImportanceOutputRF.csv'
 df.to_csv(featureImportanceOutputRF)
 
 ########### PERSIST MODEL
-model_file = dirpath + '\\CVRandomForestModel.pkl'
+model_file = dirpath + 'CVRandomForestModel.pkl'
 inFile = open(model_file, 'wb')
 joblib.dump(CVRFModel, inFile) 
 inFile.close()
 
-model_file_output = '.\\outputs\\CVRandomForestModel.pkl'
+model_file_output = './outputs/CVRandomForestModel.pkl'
 inFile = open(model_file_output, 'wb')
 joblib.dump(CVRFModel, inFile) 
 inFile.close()
@@ -131,11 +134,11 @@ random_search = model_selection.RandomizedSearchCV(SGDeNetLogistic, param_distri
 CVModelEnet = random_search.fit(X_train, y_train);
 
 ########### PERSIST MODEL
-model_file = dirpath + '\\CVElasticNetModel.pkl'
+model_file = dirpath + 'CVElasticNetModel.pkl'
 inFile = open(model_file, 'wb')
 joblib.dump(CVModelEnet, inFile) 
 
-model_file_output = '.\\outputs\\CVElasticNetModel.pkl'
+model_file_output = './outputs/CVElasticNetModel.pkl'
 inFile = open(model_file_output, 'wb')
 joblib.dump(CVModelEnet, inFile) 
 

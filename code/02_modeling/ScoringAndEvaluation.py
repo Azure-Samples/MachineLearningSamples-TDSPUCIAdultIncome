@@ -36,20 +36,21 @@ def Get_Class_Probabilities (TransformedTestDatPklFile, modelPkllFile):
 def Evaluate_Predictions (y_pred, y_actual, ROCFile):
     import numpy as np
     import pandas
-    import matplotlib.pyplot as plt; 
     from sklearn import ensemble, linear_model, model_selection, preprocessing, metrics
 
     fpr, tpr, thresholds = metrics.roc_curve(y_actual, y_pred, pos_label=1)
     Auc=metrics.auc(fpr, tpr);
-
-    plt.clf()
-    plt.figure(1)
-    plt.plot([0, 1], [0, 1], 'k--')
-    plt.plot(fpr, tpr, label='ROC')
-    plt.xlabel('False positive rate'); plt.ylabel('True positive rate');
-    plt.title("AUC: " + str(round(Auc, 3))); 
-    plt.legend(loc='best');
-
-    plt.savefig(ROCFile)
+    try:
+        import matplotlib.pyplot as plt; 
+        plt.clf()
+        plt.figure(1)
+        plt.plot([0, 1], [0, 1], 'k--')
+        plt.plot(fpr, tpr, label='ROC')
+        plt.xlabel('False positive rate'); plt.ylabel('True positive rate')
+        plt.title("AUC: " + str(round(Auc, 3))); 
+        plt.legend(loc='best')
+        plt.savefig(ROCFile)
+    except ImportError:
+        print("Warning: library (matplotlib or sklearn) missing. Can't plot. Please install matplotlib")
 
     return Auc;
