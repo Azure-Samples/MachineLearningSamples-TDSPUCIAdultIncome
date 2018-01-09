@@ -14,18 +14,18 @@ dirpath = os.environ['AZUREML_NATIVE_SHARE_DIRECTORY']
 
 
 # Transformed test data for scoring
-transformed_test_file = dirpath + "\\test_data_engineered.pkl"
+transformed_test_file = dirpath + "test_data_engineered.pkl"
 inFile = open(transformed_test_file, 'rb')
 testDataFrame = pickle.load(inFile)
 inFile.close()
 
 ## Model files
-RandomForest_model_file = dirpath + '\\CVRandomForestModel.pkl'
-ElasticNet_model_file = dirpath + '\\CVElasticNetModel.pkl'
+RandomForest_model_file = dirpath + 'CVRandomForestModel.pkl'
+ElasticNet_model_file = dirpath + 'CVElasticNetModel.pkl'
 
 ## PDF files for output of ROC plots
-RandomForestROCplotpath = dirpath + '\\RandomForestROCCurve.pdf'
-ElasticNetROCplotpath = dirpath + '\\ElasticNetROCCurve.pdf'
+RandomForestROCplotpath = dirpath + 'RandomForestROCCurve.pdf'
+ElasticNetROCplotpath = dirpath + 'ElasticNetROCCurve.pdf'
 
 
 #####################################################################################################
