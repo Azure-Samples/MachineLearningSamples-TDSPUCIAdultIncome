@@ -20,3 +20,6 @@ Details about the code used in modeling is provided in [code/02_modeling](https:
 
 ## code/03_deployment
 This folder contains code related to deployment of the Random Forest model in Azure Container Services. Details about the code used in deployment is provided in [code/03_deployment](https://github.com/Azure/MachineLearningSamples-TDSPUCIAdultIncome/tree/master/code/03_deployment).
+
+## code/unit_test
+This folder provides some python files for unit testing work.
