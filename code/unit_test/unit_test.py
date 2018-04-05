@@ -25,7 +25,7 @@ class Test_A(unittest.TestCase):
 if __name__ == "__main__":
     
 
-    file_name = "train.csv"
+    file_name = "train.csv" # adjust path if your code and csv are not in the same directory
     score_file_name = "test.csv"
     model_file_name = "adult_income_model.pkl"
     required_columns = ['age','workclass','fnlwgt','education','education_num','marital_status','occupation',
